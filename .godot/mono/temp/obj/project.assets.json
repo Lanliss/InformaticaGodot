@@ -93,11 +93,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\School\\Informatica\\new-game-project\\New Game Project.csproj",
+      "projectUniqueName": "D:\\SCHOOL\\INFORMATICA\\NEW-GAME-PROJECT\\New Game Project.csproj",
       "projectName": "New Game Project",
-      "projectPath": "E:\\School\\Informatica\\new-game-project\\New Game Project.csproj",
+      "projectPath": "D:\\SCHOOL\\INFORMATICA\\NEW-GAME-PROJECT\\New Game Project.csproj",
       "packagesPath": "C:\\Users\\Piete\\.nuget\\packages\\",
-      "outputPath": "E:\\School\\Informatica\\new-game-project\\.godot\\mono\\temp\\obj\\",
+      "outputPath": "D:\\SCHOOL\\INFORMATICA\\NEW-GAME-PROJECT\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Piete\\AppData\\Roaming\\NuGet\\NuGet.Config",
