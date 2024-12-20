@@ -15,8 +15,6 @@ public partial class Messenger : Node
 		OnStartCooldown += DoTriggerCooldownTimer;
 
 	}
- 	// Hello from github
-	//hello right back at ya! from newerTest?
 
 	private void DoTriggerCooldownTimer(int index, float value) 
 	{

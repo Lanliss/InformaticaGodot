@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\School\\Informatica\\new-game-project\\New Game Project.csproj": {}
+    "D:\\SCHOOL\\INFORMATICA\\NEW-GAME-PROJECT\\New Game Project.csproj": {}
   },
   "projects": {
-    "D:\\School\\Informatica\\new-game-project\\New Game Project.csproj": {
+    "D:\\SCHOOL\\INFORMATICA\\NEW-GAME-PROJECT\\New Game Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\School\\Informatica\\new-game-project\\New Game Project.csproj",
+        "projectUniqueName": "D:\\SCHOOL\\INFORMATICA\\NEW-GAME-PROJECT\\New Game Project.csproj",
         "projectName": "New Game Project",
-        "projectPath": "D:\\School\\Informatica\\new-game-project\\New Game Project.csproj",
+        "projectPath": "D:\\SCHOOL\\INFORMATICA\\NEW-GAME-PROJECT\\New Game Project.csproj",
         "packagesPath": "C:\\Users\\Piete\\.nuget\\packages\\",
-        "outputPath": "D:\\School\\Informatica\\new-game-project\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "D:\\SCHOOL\\INFORMATICA\\NEW-GAME-PROJECT\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Piete\\AppData\\Roaming\\NuGet\\NuGet.Config",
