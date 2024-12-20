@@ -1,0 +1,102 @@
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.deps.json
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.runtimeconfig.json
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.dll
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.pdb
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.csproj.AssemblyReference.cache
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.AssemblyInfoInputs.cache
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.AssemblyInfo.cs
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.csproj.CoreCompileInputs.cache
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.csproj.CopyComplete
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.dll
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\obj\Debug\refint\New Game Project.dll
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.pdb
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.genruntimeconfig.cache
+C:\Users\121230\Documents\new-game-project\.godot\mono\temp\obj\Debug\ref\New Game Project.dll
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\bin\Debug\New Game Project.deps.json
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\bin\Debug\New Game Project.runtimeconfig.json
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\bin\Debug\New Game Project.dll
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\bin\Debug\New Game Project.pdb
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\obj\Debug\New Game Project.csproj.AssemblyReference.cache
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\obj\Debug\New Game Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\obj\Debug\New Game Project.AssemblyInfoInputs.cache
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\obj\Debug\New Game Project.AssemblyInfo.cs
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\obj\Debug\New Game Project.csproj.CoreCompileInputs.cache
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\obj\Debug\New Game.D781FC22.Up2Date
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\obj\Debug\New Game Project.dll
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\obj\Debug\refint\New Game Project.dll
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\obj\Debug\New Game Project.pdb
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\obj\Debug\New Game Project.genruntimeconfig.cache
+C:\USERS\PIETE\DESKTOP\NEW-GAME-PROJECT\.godot\mono\temp\obj\Debug\ref\New Game Project.dll
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.deps.json
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.runtimeconfig.json
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.dll
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.pdb
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.csproj.AssemblyReference.cache
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.AssemblyInfoInputs.cache
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.AssemblyInfo.cs
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.csproj.CoreCompileInputs.cache
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.csproj.CopyComplete
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.dll
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\obj\Debug\refint\New Game Project.dll
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.pdb
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.genruntimeconfig.cache
+C:\Users\121230\Desktop\School\new-game-project\.godot\mono\temp\obj\Debug\ref\New Game Project.dll
+E:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.deps.json
+E:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.runtimeconfig.json
+E:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.dll
+E:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.pdb
+E:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\GodotSharp.dll
+E:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+E:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.csproj.AssemblyReference.cache
+E:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.GeneratedMSBuildEditorConfig.editorconfig
+E:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.AssemblyInfoInputs.cache
+E:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.AssemblyInfo.cs
+E:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.csproj.CoreCompileInputs.cache
+E:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.csproj.CopyComplete
+E:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.dll
+E:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\refint\New Game Project.dll
+E:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.pdb
+E:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.genruntimeconfig.cache
+E:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\ref\New Game Project.dll
+H:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.deps.json
+H:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.runtimeconfig.json
+H:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.dll
+H:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.pdb
+H:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\GodotSharp.dll
+H:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+H:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.csproj.AssemblyReference.cache
+H:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.GeneratedMSBuildEditorConfig.editorconfig
+H:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.AssemblyInfoInputs.cache
+H:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.AssemblyInfo.cs
+H:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.csproj.CoreCompileInputs.cache
+H:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game.D781FC22.Up2Date
+H:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.dll
+H:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\refint\New Game Project.dll
+H:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.pdb
+H:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.genruntimeconfig.cache
+H:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\ref\New Game Project.dll
+F:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.deps.json
+F:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.runtimeconfig.json
+F:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.dll
+F:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\New Game Project.pdb
+F:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\GodotSharp.dll
+F:\School\Informatica\new-game-project\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+F:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.csproj.AssemblyReference.cache
+F:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.GeneratedMSBuildEditorConfig.editorconfig
+F:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.AssemblyInfoInputs.cache
+F:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.AssemblyInfo.cs
+F:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.csproj.CoreCompileInputs.cache
+F:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game.D781FC22.Up2Date
+F:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.dll
+F:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\refint\New Game Project.dll
+F:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.pdb
+F:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.genruntimeconfig.cache
+F:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\ref\New Game Project.dll

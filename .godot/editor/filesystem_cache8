@@ -1,0 +1,31 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1730811442
+::res://Assets/::1732021316
+icon.svg::CompressedTexture2D::5747307070527502943::1730632898::1732021320::1::::<><>::
+::res://Blender/::1733849746
+Lowpoly cowboy.blend::PackedScene::3738712954599668248::1733849702::1733849756::1::::<><>::
+::res://Blender/textures/::1733849756
+256x256 Grid.png::CompressedTexture2D::3532321766617031787::1733849756::1733850134::1::::<><>::
+::res://Instance Scenes/::1732021224
+attack_hitbox.tscn::PackedScene::6534749506964784759::1732021048::0::1::::<><>::
+attack_hitbox_2.tscn::PackedScene::1880999185834537658::1732021056::0::1::::<><>::
+dummy.tscn::PackedScene::6782961174717611298::1733756424::0::1::::<><>::uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn
+Enemy.tscn::PackedScene::4627544011651792625::1733756424::0::1::::<><>::res://Scripts/NavScript.cs<>uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn
+healthbar.tscn::PackedScene::8637915731379965551::1733756424::0::1::::<><>::res://Scripts/Healthbar.cs
+TestCube.tscn::PackedScene::8541388896930186514::1732024614::0::1::::<><>::
+::res://Scripts/::1732021216
+CameraScript.cs::CSharpScript::-1::1733754724::0::1::::<>Camera3D<>::
+Healthbar.cs::CSharpScript::-1::1732626040::0::1::::<>Node3D<>::
+Messenger.cs::CSharpScript::-1::1733233790::0::1::::<>Node<>::
+NavScript.cs::CSharpScript::-1::1732626818::0::1::::<>CharacterBody3D<>::
+PlayerScript.cs::CSharpScript::-1::1733756414::0::1::::<>CharacterBody3D<>::
+UiNumberScript.cs::CSharpScript::-1::1733234560::0::1::::<>Control<>::
+::res://Scripts/textures/::1733849716
+256x256 Grid.png::CompressedTexture2D::4457847374056606443::1733849716::1733849720::1::::<><>::
+::res://textures/::1733849730
+256x256 Grid.png::CompressedTexture2D::1278727258630554426::1733849730::1733849746::1::::<><>::
+::res://Unique Scenes/::1732021354
+FollowCam.tscn::PackedScene::2478559553035008294::1732021228::0::1::::<><>::res://Scripts/CameraScript.cs
+GodotTryinsmthn.tscn::PackedScene::2849313196763200652::1733849692::0::1::::<><>::uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>uid://dtxror4plrnag::::res://Instance Scenes/TestCube.tscn<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://c3vym50vcokec::::res://Instance Scenes/dummy.tscn<>uid://ct6hmu1m4gdrr::::res://Unique Scenes/UiNumber.tscn
+player.tscn::PackedScene::6209450061745544640::1733756552::0::1::::<><>::res://Scripts/PlayerScript.cs<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn
+UiNumber.tscn::PackedScene::6170872646577030879::1733756424::0::1::::<><>::res://Scripts/UiNumberScript.cs

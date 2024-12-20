@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=3 uid="uid://b66u8dxojywcf"]
+
+[ext_resource type="Script" path="res://Scripts/NavScript.cs" id="1_7g6jv"]
+[ext_resource type="PackedScene" uid="uid://dvcjhe4agwqod" path="res://Instance Scenes/healthbar.tscn" id="1_muime"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_kxhxh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uqygq"]
+albedo_color = Color(1, 0.647059, 0, 1)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ouiib"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_mc2wh"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_73r03"]
+height = 1.5
+radius = 6.0
+
+[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("_navigationAgent")]
+script = ExtResource("1_7g6jv")
+_navigationAgent = NodePath("NavigationAgent3D")
+pathDistance = 0.1
+targetDistance = 1.25
+pathfindingUpdateTime = 0.2
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_kxhxh")
+surface_material_override/0 = SubResource("StandardMaterial3D_uqygq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_ouiib")
+
+[node name="Healthbar" parent="." node_paths=PackedStringArray("parentCollisionArea") instance=ExtResource("1_muime")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0)
+parentCollisionArea = NodePath("../Area3D")
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 4
+collision_mask = 24
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("CapsuleShape3D_mc2wh")
+
+[node name="DetectionArea3D" type="Area3D" parent="."]
+collision_layer = 64
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DetectionArea3D"]
+shape = SubResource("CylinderShape3D_73r03")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_height_offset = -1.1
+navigation_layers = 5
+avoidance_enabled = true
+time_horizon_agents = 10.0
+avoidance_layers = 4
+avoidance_mask = 5
+debug_enabled = true
+debug_use_custom = true
+debug_path_custom_color = Color(0.50171, 0.571719, 0.889622, 1)
+
+[connection signal="updateHealthToNav" from="Healthbar" to="." method="Die"]
+[connection signal="body_entered" from="DetectionArea3D" to="." method="OnPlayerDetected"]
+[connection signal="velocity_computed" from="NavigationAgent3D" to="." method="OnVelocity"]

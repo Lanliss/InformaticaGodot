@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://12f1ty21gw23"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uaasb"]
+size = Vector3(0.5, 1, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_n8x4t"]
+size = Vector3(0.5, 1, 5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_urovg"]
+transparency = 1
+albedo_color = Color(1, 0, 0, 0.392157)
+
+[node name="AttackHitbox" type="Area3D"]
+collision_layer = 0
+collision_mask = 0
+metadata/dmg = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+shape = SubResource("BoxShape3D_uaasb")
+disabled = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+mesh = SubResource("BoxMesh_n8x4t")
+surface_material_override/0 = SubResource("StandardMaterial3D_urovg")

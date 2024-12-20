@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbkvrp4dyvmi5"]
+
+[ext_resource type="Script" path="res://Scripts/CameraScript.cs" id="1_x735l"]
+
+[node name="Camera3D" type="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 5.2, 4.2)
+script = ExtResource("1_x735l")
+frameCount = 500
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.710173, 0.704027, 0, -0.704027, 0.710173, 0, 4.50108, -1.43862)
+light_energy = 16.0
+light_indirect_energy = 16.0
+spot_range = 8.33584
+spot_angle = 44.4094

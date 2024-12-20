@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://cup50aaop1qpc"]
+
+[ext_resource type="Script" path="res://Scripts/PlayerScript.cs" id="1_jukd8"]
+[ext_resource type="PackedScene" uid="uid://c0dqmtkmnerjr" path="res://Instance Scenes/attack_hitbox.tscn" id="2_8afs3"]
+[ext_resource type="PackedScene" uid="uid://12f1ty21gw23" path="res://Instance Scenes/attack_hitbox_2.tscn" id="3_idman"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vt3mt"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_gvdxl"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_10lv5"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_70pvk"]
+
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("_lookObject", "attackHitbox", "attackHitbox2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+collision_layer = 2
+collision_mask = 53
+script = ExtResource("1_jukd8")
+_lookObject = NodePath("TempDirectionIndicator")
+projectileSpeed = 100.0
+attackHitbox = NodePath("AttackHitbox")
+attackHitbox2 = NodePath("AttackHitbox2")
+attackCooldown2 = 0.1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_vt3mt")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_gvdxl")
+
+[node name="TempDirectionIndicator" type="RigidBody3D" parent="."]
+gravity_scale = 0.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TempDirectionIndicator"]
+shape = SubResource("SphereShape3D_10lv5")
+disabled = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="TempDirectionIndicator"]
+mesh = SubResource("SphereMesh_70pvk")
+
+[node name="AttackHitbox" parent="." instance=ExtResource("2_8afs3")]
+visible = false
+collision_layer = 8
+collision_mask = 4
+metadata/dmg = 10
+
+[node name="AttackHitbox2" parent="." instance=ExtResource("3_idman")]
+visible = false
+collision_layer = 8
+collision_mask = 4
+metadata/dmg = 15

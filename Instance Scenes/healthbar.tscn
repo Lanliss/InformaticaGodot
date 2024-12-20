@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvcjhe4agwqod"]
+
+[ext_resource type="Script" path="res://Scripts/Healthbar.cs" id="1_ddjf3"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_t43jo"]
+viewport_path = NodePath("SubViewport")
+
+[node name="Healthbar" type="Node3D" node_paths=PackedStringArray("progressBar")]
+script = ExtResource("1_ddjf3")
+progressBar = NodePath("SubViewport/ProgressBar")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(500, 27)
+
+[node name="ProgressBar" type="ProgressBar" parent="SubViewport"]
+offset_right = 500.0
+offset_bottom = 27.0
+step = 1.0
+value = 100.0
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+billboard = 2
+texture = SubResource("ViewportTexture_t43jo")
