@@ -118,3 +118,21 @@ D:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\refint\New Gam
 D:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.pdb
 D:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\New Game Project.genruntimeconfig.cache
 D:\School\Informatica\new-game-project\.godot\mono\temp\obj\Debug\ref\New Game Project.dll
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\bin\Debug\New Game Project.deps.json
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\bin\Debug\New Game Project.runtimeconfig.json
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\bin\Debug\New Game Project.dll
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\bin\Debug\New Game Project.pdb
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\obj\Debug\New Game Project.csproj.AssemblyReference.cache
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\obj\Debug\New Game Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\obj\Debug\New Game Project.AssemblyInfoInputs.cache
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\obj\Debug\New Game Project.AssemblyInfo.cs
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\obj\Debug\New Game Project.csproj.CoreCompileInputs.cache
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\obj\Debug\New Game Project.sourcelink.json
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\obj\Debug\New Game.D781FC22.Up2Date
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\obj\Debug\New Game Project.dll
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\obj\Debug\refint\New Game Project.dll
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\obj\Debug\New Game Project.pdb
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\obj\Debug\New Game Project.genruntimeconfig.cache
+C:\Users\piete\source\repos\GodotInformatica\.godot\mono\temp\obj\Debug\ref\New Game Project.dll

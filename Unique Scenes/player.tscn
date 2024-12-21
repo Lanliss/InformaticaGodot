@@ -43,10 +43,8 @@ mesh = SubResource("SphereMesh_70pvk")
 visible = false
 collision_layer = 8
 collision_mask = 4
-metadata/dmg = 10
 
 [node name="AttackHitbox2" parent="." instance=ExtResource("3_idman")]
 visible = false
 collision_layer = 8
 collision_mask = 4
-metadata/dmg = 15

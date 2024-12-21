@@ -28,7 +28,7 @@ public partial class UiNumberScript : Control
 			{
 				newText = (float.Parse(label.Text) - delta).ToString("#.##");
 			}
-			else newText = 0.ToString("#.##");
+			else newText = "00";
 
 			label.Text = newText;
 		}
