@@ -19,14 +19,14 @@ public partial class UiNumberScript : Control
 
     public override void _Process(double delta)
     {
-		if (float.Parse(label.Text) > 0f)
+		if (float.Parse(label.Text) >= 0)
 		{
 			//GD.Print("label has value ");
 			string newText;
 
 			if (float.Parse(label.Text) - delta > 0)
 			{
-				newText = (float.Parse(label.Text) - delta).ToString("#.##");
+				newText = (float.Parse(label.Text) - (float)delta).ToString("#.##");
 			}
 			else newText = "00";
 
@@ -37,7 +37,6 @@ public partial class UiNumberScript : Control
 
 	public void DoCooldown(int index, float value) 
 	{
-        GD.Print("trigger cooldown timer signal");
 		if (index == timerID)
 		{
 			GD.Print("Correct index");

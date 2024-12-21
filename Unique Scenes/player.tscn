@@ -21,7 +21,7 @@ _lookObject = NodePath("TempDirectionIndicator")
 projectileSpeed = 100.0
 attackHitbox = NodePath("AttackHitbox")
 attackHitbox2 = NodePath("AttackHitbox2")
-attackCooldown2 = 0.1
+attackCooldown2 = 0.125
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_vt3mt")

@@ -70,6 +70,7 @@ _player = NodePath("../PlayerBody3D")
 offset_left = 100.0
 offset_right = 100.0
 scale = Vector2(2.5, 2.5)
+size_flags_vertical = 4
 timerID = 2
 
 [connection signal="MousePosFound" from="FollowCam" to="PlayerBody3D" method="OnMousePosition"]
