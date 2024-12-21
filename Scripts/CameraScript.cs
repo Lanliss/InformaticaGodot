@@ -27,7 +27,6 @@ public partial class CameraScript : Camera3D
     [Signal]
 	public delegate void MousePosFoundEventHandler(Vector3 mousePosition);
 
-	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 		if(useCustomOffsetZ == true) { 
@@ -35,7 +34,6 @@ public partial class CameraScript : Camera3D
 		}
 	}
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _PhysicsProcess(double delta)
 	{
         Vector2 mousePos = GetViewport().GetMousePosition();
@@ -48,9 +46,13 @@ public partial class CameraScript : Camera3D
 		ray.From = from;
 		ray.To = to;
 
-		var rayCastResult = space.IntersectRay(ray);
-		var mousePosition = (Vector3)rayCastResult["position"];
-        EmitSignal(SignalName.MousePosFound, mousePosition);
+		Dictionary rayCastResult = space.IntersectRay(ray);
+		if (rayCastResult.ContainsKey("Position"))
+		{
+			var mousePosition = (Vector3)rayCastResult["position"];
+            EmitSignal(SignalName.MousePosFound, mousePosition);
+			GD.Print("Mouse Pos Found");
+		}
 		
 
         //move camera X

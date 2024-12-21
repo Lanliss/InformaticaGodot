@@ -8,7 +8,7 @@ public partial class UiNumberScript : Control
 	private Label label;
 	[Export]
 	private int timerID = 0;
-
+	private float timerValue = 0;
     private Messenger _messengerSingleton; //Messenger singleton
 
     public override void _Ready()
@@ -19,20 +19,39 @@ public partial class UiNumberScript : Control
 
     public override void _Process(double delta)
     {
-		if (float.Parse(label.Text) > 0)
+		if (timerValue > 0)
 		{
 			//GD.Print("label has value ");
 			string newText;
 
-			if (float.Parse(label.Text) - delta > 0)
+			if (timerValue - (float)delta > 0.01f)
 			{
-				newText = (float.Parse(label.Text) - (float)delta).ToString("#.##");
+				timerValue -= (float)delta;
+				newText = ((double)Math.Round(timerValue, 1)).ToString("0.0");
 			}
-			else newText = "00";
+			else
+			{
+				timerValue = 0;
+				newText = "0.0";
+			}
 
 			label.Text = newText;
 		}
-			
+
+        //if (double.Parse(label.Text) > 0)
+        //{
+        //    //GD.Print("label has value ");
+        //    string newText;
+
+        //    if (float.Parse(label.Text) - delta > 0.01)
+        //    {
+        //        newText = ((double)Math.Round((float.Parse(label.Text) - (float)delta), 1)).ToString("#.#");
+        //    }
+        //    else newText = "00";
+
+        //    label.Text = newText;
+        //}
+
     }
 
 	public void DoCooldown(int index, float value) 
@@ -40,7 +59,7 @@ public partial class UiNumberScript : Control
 		if (index == timerID)
 		{
 			GD.Print("Correct index");
-			label.Text = value.ToString("0.##");
+			timerValue = value;
 		}
 		else { GD.Print("Incorrect index"); }
 	}
