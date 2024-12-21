@@ -19,7 +19,7 @@ public partial class UiNumberScript : Control
 
     public override void _Process(double delta)
     {
-		if (float.Parse(label.Text) >= 0)
+		if (float.Parse(label.Text) > 0)
 		{
 			//GD.Print("label has value ");
 			string newText;
