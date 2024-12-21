@@ -47,7 +47,7 @@ public partial class CameraScript : Camera3D
 		ray.To = to;
 
 		Dictionary rayCastResult = space.IntersectRay(ray);
-		if (rayCastResult.ContainsKey("Position"))
+		if (rayCastResult.ContainsKey("position"))
 		{
 			var mousePosition = (Vector3)rayCastResult["position"];
             EmitSignal(SignalName.MousePosFound, mousePosition);
