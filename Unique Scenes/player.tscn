@@ -20,8 +20,9 @@ script = ExtResource("1_jukd8")
 _lookObject = NodePath("TempDirectionIndicator")
 projectileSpeed = 100.0
 attackHitbox = NodePath("AttackHitbox")
+attackCooldown1 = 1.0
 attackHitbox2 = NodePath("AttackHitbox2")
-attackDuration2 = 0.1
+attackDuration2 = 0.125
 attackCooldown2 = 0.3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
