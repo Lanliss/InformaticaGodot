@@ -1,13 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1734884675
+::res://::1734884687
 ::res://Assets/::1734884624
 icon.svg::CompressedTexture2D::5747307070527502943::1734812607::1734812778::1::::<><>::
 Lowpoly cowboy.blend::PackedScene::5133422091147269667::1733849473::1734884624::1::::<><>::
 Lowpoly cowboy.glb::PackedScene::7663772123613384903::1734884558::1734884624::1::::<><>::uid://vrlcqwrjljr::::res://Assets/Lowpoly cowboy_Untitled.png<>uid://b6uotsaj12x08::::res://Assets/Lowpoly cowboy_256x256 Grid.png
 Lowpoly cowboy_256x256 Grid.png::CompressedTexture2D::4604447305401278823::1734884624::1734884624::1::::<><>::
 Lowpoly cowboy_Untitled.png::CompressedTexture2D::44403896231473799::1734884624::1734884624::1::::<><>::
-::res://Assets/textures/::1734884621
-256x256 Grid.png::CompressedTexture2D::3125688155701660630::1734884621::1734884675::1::::<><>::
+::res://Assets/textures/::1734884675
+256x256 Grid.png::CompressedTexture2D::3125688155701660630::1734884621::1734884976::1::::<><>::
 ::res://Instance Scenes/::1734821426
 attack_hitbox.tscn::PackedScene::6534749506964784759::1734821426::0::1::::<><>::
 attack_hitbox_2.tscn::PackedScene::1880999185834537658::1734821426::0::1::::<><>::
@@ -22,10 +22,8 @@ Messenger.cs::CSharpScript::-1::1734815124::0::1::::<>Node<>::
 NavScript.cs::CSharpScript::-1::1734869444::0::1::::<>CharacterBody3D<>::
 PlayerScript.cs::CSharpScript::-1::1734819806::0::1::::<>CharacterBody3D<>::
 UiNumberScript.cs::CSharpScript::-1::1734821116::0::1::::<>Control<>::
-::res://textures/::1734812778
-256x256 Grid.png::CompressedTexture2D::1278727258630554426::1734812607::1734812778::1::::<><>::
-::res://Unique Scenes/::1734869444
+::res://Unique Scenes/::1734884719
 FollowCam.tscn::PackedScene::2478559553035008294::1734812607::0::1::::<><>::res://Scripts/CameraScript.cs
 GodotTryinsmthn.tscn::PackedScene::2849313196763200652::1734867070::0::1::::<><>::uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>uid://dtxror4plrnag::::res://Instance Scenes/TestCube.tscn<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://c3vym50vcokec::::res://Instance Scenes/dummy.tscn<>uid://ct6hmu1m4gdrr::::res://Unique Scenes/UiNumber.tscn
-player.tscn::PackedScene::6209450061745544640::1734869444::0::1::::<><>::res://Scripts/PlayerScript.cs<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn
+player.tscn::PackedScene::6209450061745544640::1734884719::0::1::::<><>::res://Scripts/PlayerScript.cs<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn
 UiNumber.tscn::PackedScene::6170872646577030879::1734821426::0::1::::<><>::res://Scripts/UiNumberScript.cs
