@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\camerascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\camerascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\navscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\navscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\uinumberscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\uinumberscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\messenger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\messenger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CameraScript.cs",
+              "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\CameraScript.cs",
+              "RelativeDocumentMoniker": "Scripts\\CameraScript.cs",
+              "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\CameraScript.cs",
+              "RelativeToolTip": "Scripts\\CameraScript.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAwEAAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T21:15:16.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Healthbar.cs",
+              "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\Healthbar.cs",
+              "RelativeDocumentMoniker": "Scripts\\Healthbar.cs",
+              "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\Healthbar.cs",
+              "RelativeToolTip": "Scripts\\Healthbar.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBsAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T20:41:43.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NavScript.cs",
+              "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\NavScript.cs",
+              "RelativeDocumentMoniker": "Scripts\\NavScript.cs",
+              "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\NavScript.cs",
+              "RelativeToolTip": "Scripts\\NavScript.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T20:41:18.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Messenger.cs",
+              "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\Messenger.cs",
+              "RelativeDocumentMoniker": "Scripts\\Messenger.cs",
+              "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\Messenger.cs",
+              "RelativeToolTip": "Scripts\\Messenger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T20:35:13.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UiNumberScript.cs",
+              "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\UiNumberScript.cs",
+              "RelativeDocumentMoniker": "Scripts\\UiNumberScript.cs",
+              "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\UiNumberScript.cs",
+              "RelativeToolTip": "Scripts\\UiNumberScript.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAUwAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T20:30:54.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerScript.cs",
+              "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\PlayerScript.cs",
+              "RelativeDocumentMoniker": "Scripts\\PlayerScript.cs",
+              "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\PlayerScript.cs",
+              "RelativeToolTip": "Scripts\\PlayerScript.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwC8AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T20:27:36.608Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
