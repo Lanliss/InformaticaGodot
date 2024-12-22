@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "DIBOLQ3ngw8=",
+  "dgSpecHash": "uu/LZsnLlsL0t7TF2+C5vSuYoDuu5h2RMvpHi+ti/MOVHAP//MCqz/I3G9b3SI07xIfOct3GW1+JktEiK45XdA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\New Game Project.csproj",
+  "projectFilePath": "C:\\USERS\\OSMAN\\SOURCE\\REPOS\\DA GAEM\\New Game Project.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\piete\\.nuget\\packages\\godot.sourcegenerators\\4.3.0\\godot.sourcegenerators.4.3.0.nupkg.sha512",
-    "C:\\Users\\piete\\.nuget\\packages\\godotsharp\\4.3.0\\godotsharp.4.3.0.nupkg.sha512",
-    "C:\\Users\\piete\\.nuget\\packages\\godotsharpeditor\\4.3.0\\godotsharpeditor.4.3.0.nupkg.sha512"
+    "C:\\Users\\Osman\\.nuget\\packages\\godot.sourcegenerators\\4.3.0\\godot.sourcegenerators.4.3.0.nupkg.sha512",
+    "C:\\Users\\Osman\\.nuget\\packages\\godotsharp\\4.3.0\\godotsharp.4.3.0.nupkg.sha512",
+    "C:\\Users\\Osman\\.nuget\\packages\\godotsharpeditor\\4.3.0\\godotsharpeditor.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
