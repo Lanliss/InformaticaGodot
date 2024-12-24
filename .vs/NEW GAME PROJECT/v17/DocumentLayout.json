@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Osman\\source\\repos\\Da gaem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\osman\\source\\repos\\da gaem\\scripts\\navscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\navscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NavScript.cs",
+              "DocumentMoniker": "C:\\Users\\Osman\\source\\repos\\Da gaem\\Scripts\\NavScript.cs",
+              "RelativeDocumentMoniker": "Scripts\\NavScript.cs",
+              "ToolTip": "C:\\Users\\Osman\\source\\repos\\Da gaem\\Scripts\\NavScript.cs",
+              "RelativeToolTip": "Scripts\\NavScript.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T11:08:48.063Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
