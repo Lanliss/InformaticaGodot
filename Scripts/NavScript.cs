@@ -7,6 +7,8 @@ public partial class NavScript : CharacterBody3D
 
     [Export]
     private NavigationAgent3D _navigationAgent;
+    [Export]
+    private CollisionShape3D playerDetectionShape3D;
 
     [ExportCategory("Pathfinding settings")]
     [Export]
@@ -34,12 +36,17 @@ public partial class NavScript : CharacterBody3D
         set { _navigationAgent.TargetPosition = value; }
     }
 
-    public void Die()
+    public void Die(int health)
     {
-        if (!dead)
+        if (!dead && health == 0)
         {
             deathPos = GlobalPosition;
             dead = true;
+        }
+        else if (!dead && !playerFound) { //this part of the function is not death related
+
+            playerDetectionShape3D.Shape.Set(CylinderShape3D.PropertyName.Radius, 100f);
+
         }
     }
 

@@ -9,7 +9,7 @@ public partial class Healthbar : Node3D
 	[Export] private int maxHealth = 100;
 
     [Signal]
-    public delegate void updateHealthToNavEventHandler();
+    public delegate void updateHealthToNavEventHandler(int health);
     public override void _Ready()
 	{
 		progressBar.MaxValue = maxHealth;
@@ -34,9 +34,9 @@ public partial class Healthbar : Node3D
 			}
 			else {
 				progressBar.Value = 0; 
-				EmitSignal(SignalName.updateHealthToNav);
 			}
-		}
+            EmitSignal(SignalName.updateHealthToNav, progressBar.Value);
+        }
 		else { Debug.WriteLine("Area does not have the correct metadata"); }
 	}
 }
