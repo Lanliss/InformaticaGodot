@@ -1,0 +1,16 @@
+res://Instance Scenes/Enemy.tscn
+res://Scripts/CameraScript.cs
+res://Scripts/UiNumberScript.cs
+res://Scripts/Messenger.cs
+res://Scripts/NavScript.cs
+res://Scripts/Healthbar.cs
+res://Scripts/PlayerScript.cs
+res://Unique Scenes/GodotTryinsmthn.tscn
+res://Unique Scenes/player.tscn
+res://Instance Scenes/dummy.tscn
+res://Instance Scenes/healthbar.tscn
+res://Unique Scenes/UiNumber.tscn
+res://Instance Scenes/attack_hitbox_2.tscn
+res://Instance Scenes/attack_hitbox.tscn
+res://Instance Scenes/EnemyOsmanMESHFILE.tscn
+res://Instance Scenes/EnemyLoopinganimation.tscn

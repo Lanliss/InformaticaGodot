@@ -1,12 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://b66u8dxojywcf"]
+[gd_scene load_steps=7 format=3 uid="uid://b66u8dxojywcf"]
 
 [ext_resource type="Script" path="res://Scripts/NavScript.cs" id="1_7g6jv"]
 [ext_resource type="PackedScene" uid="uid://dvcjhe4agwqod" path="res://Instance Scenes/healthbar.tscn" id="1_muime"]
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_kxhxh"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uqygq"]
-albedo_color = Color(1, 0.647059, 0, 1)
+[ext_resource type="PackedScene" uid="uid://ded086ybmbdvt" path="res://Instance Scenes/EnemyLoopinganimation.tscn" id="3_jgda8"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ouiib"]
 
@@ -23,10 +19,6 @@ playerDetectionShape3D = NodePath("DetectionArea3D/CollisionShape3D")
 pathDistance = 0.1
 targetDistance = 1.25
 pathfindingUpdateTime = 0.2
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("CapsuleMesh_kxhxh")
-surface_material_override/0 = SubResource("StandardMaterial3D_uqygq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_ouiib")
@@ -59,6 +51,8 @@ avoidance_mask = 5
 debug_enabled = true
 debug_use_custom = true
 debug_path_custom_color = Color(0.50171, 0.571719, 0.889622, 1)
+
+[node name="LoopingAnimEnemy" parent="." instance=ExtResource("3_jgda8")]
 
 [connection signal="updateHealthToNav" from="Healthbar" to="." method="Die"]
 [connection signal="body_entered" from="DetectionArea3D" to="." method="OnPlayerDetected"]
