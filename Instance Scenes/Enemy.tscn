@@ -16,9 +16,10 @@ albedo_color = Color(1, 0.647059, 0, 1)
 height = 1.5
 radius = 6.0
 
-[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("_navigationAgent")]
+[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("_navigationAgent", "playerDetectionShape3D")]
 script = ExtResource("1_7g6jv")
 _navigationAgent = NodePath("NavigationAgent3D")
+playerDetectionShape3D = NodePath("DetectionArea3D/CollisionShape3D")
 pathDistance = 0.1
 targetDistance = 1.25
 pathfindingUpdateTime = 0.2
