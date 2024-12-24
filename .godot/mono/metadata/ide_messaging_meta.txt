@@ -1,2 +1,2 @@
-﻿57768
-C:/Users/piete/Desktop/School/Informatica/Godot_v4.3-stable_mono_win64/Godot_v4.3-stable_mono_win64.exe
+﻿55131
+C:/Users/Osman/Downloads/Godot_v4.3-stable_mono_win64/Godot_v4.3-stable_mono_win64/Godot_v4.3-stable_mono_win64.exe
