@@ -51,7 +51,7 @@ public partial class CameraScript : Camera3D
 		{
 			var mousePosition = (Vector3)rayCastResult["position"];
             EmitSignal(SignalName.MousePosFound, mousePosition);
-			GD.Print("Mouse Pos Found");
+			//GD.Print("Mouse Pos Found");
 		}
 		
 
