@@ -1,0 +1,9 @@
+res://Unique Scenes/GodotTryinsmthn.tscn
+res://Instance Scenes/Enemy.tscn
+res://Instance Scenes/EnemyLoopinganimation.tscn
+res://Scripts/CameraScript.cs
+res://Scripts/UiNumberScript.cs
+res://Scripts/Messenger.cs
+res://Scripts/NavScript.cs
+res://Scripts/Healthbar.cs
+res://Scripts/PlayerScript.cs
