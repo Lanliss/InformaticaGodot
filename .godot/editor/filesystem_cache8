@@ -1,8 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1735056791
-::res://Assets/::1734967300
-icon.svg::CompressedTexture2D::5747307070527502943::1734865348::1734865402::1::::<><>::
-Lowpoly cowboy.glb::PackedScene::2534315005101297600::1734967281::1734967300::1::::<><>::
+::res://::1735310699
+lvl0.tscn::PackedScene::6546431787902665069::1735305145::0::1::::<><>::uid://dlx58m21dkfk2::::res://Assets/lvl0.glb
+node_3d.tscn::PackedScene::5523598074086501563::1735057451::0::1::::<><>::uid://bcdv2ellaj2wa::::res://Assets/Lowpoly cowboy.glb
+::res://Assets/::1735305013
+lvl0.glb::PackedScene::7980701133598539907::1735305013::1735305013::1::::<><>::uid://dnh7imp85mwo2::::res://Assets/lvl0_dungeon_texture.png
+lvl0_dungeon_texture.png::CompressedTexture2D::8088125547764133231::1735305013::1735305013::1::::<><>::
+::res://Assets/levels/::1735304977
 ::res://Instance Scenes/::1734967270
 attack_hitbox.tscn::PackedScene::6534749506964784759::1734865348::0::1::::<><>::
 attack_hitbox_2.tscn::PackedScene::1880999185834537658::1734865348::0::1::::<><>::

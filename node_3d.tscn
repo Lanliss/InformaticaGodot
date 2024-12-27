@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckxw4anawqjo2"]
+
+[ext_resource type="PackedScene" uid="uid://bcdv2ellaj2wa" path="res://Assets/Lowpoly cowboy.glb" id="1_a3nkn"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Lowpoly cowboy" parent="." instance=ExtResource("1_a3nkn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.28791, 0, 1.56621)
