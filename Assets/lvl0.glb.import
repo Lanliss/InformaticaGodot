@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bcdv2ellaj2wa"
-path="res://.godot/imported/Lowpoly cowboy.glb-1379237627264746626a7f6389bd9335.scn"
+uid="uid://dlx58m21dkfk2"
+path="res://.godot/imported/lvl0.glb-29366ea6191df9c635de0e57afe35636.scn"
 
 [deps]
 
-source_file="res://Assets/Lowpoly cowboy.glb"
-dest_files=["res://.godot/imported/Lowpoly cowboy.glb-1379237627264746626a7f6389bd9335.scn"]
+source_file="res://Assets/lvl0.glb"
+dest_files=["res://.godot/imported/lvl0.glb-29366ea6191df9c635de0e57afe35636.scn"]
 
 [params]
 
