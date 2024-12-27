@@ -12,10 +12,11 @@
 height = 1.5
 radius = 6.0
 
-[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("_navigationAgent", "playerDetectionShape3D")]
+[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("_navigationAgent", "playerDetectionShape3D", "visualEnemy")]
 script = ExtResource("1_7g6jv")
 _navigationAgent = NodePath("NavigationAgent3D")
 playerDetectionShape3D = NodePath("DetectionArea3D/CollisionShape3D")
+visualEnemy = NodePath("LoopingAnimEnemy")
 pathDistance = 0.1
 targetDistance = 1.25
 pathfindingUpdateTime = 0.2

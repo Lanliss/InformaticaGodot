@@ -4,11 +4,15 @@ public partial class NavScript : CharacterBody3D
 {
     [Export]
     private float moveSpeed = 3f;
+    [Export]
+    private float rotationSpeed = 1.0f;
 
     [Export]
     private NavigationAgent3D _navigationAgent;
     [Export]
     private CollisionShape3D playerDetectionShape3D;
+    [Export]
+    private Node3D visualEnemy;
 
     [ExportCategory("Pathfinding settings")]
     [Export]
@@ -24,6 +28,8 @@ public partial class NavScript : CharacterBody3D
     //end of exports
 
 
+
+    private float targetRotation;
     private Node3D playerNode; 
     private float timeSincePathfindingUpdate = 0;
     private bool playerFound = false;
@@ -60,10 +66,11 @@ public partial class NavScript : CharacterBody3D
 
         Callable.From(ActorSetup).CallDeferred();
     }
-
+     
     public void OnVelocity(Vector3 safeVelocity)
     {
         Velocity = safeVelocity;
+        targetRotation = Mathf.Atan2(safeVelocity.X, safeVelocity.Z);
         MoveAndSlide();
     }
 
@@ -76,13 +83,11 @@ public partial class NavScript : CharacterBody3D
 
     public override void _PhysicsProcess(double delta)
     {
-        if (dead) { if (MovementTarget != deathPos || GlobalPosition != deathPos) { MovementTarget = deathPos; GlobalPosition = deathPos; } return; /*Jezus arc?*/} 
+        if (dead) { if (MovementTarget != deathPos || GlobalPosition != deathPos) { MovementTarget = deathPos; GlobalPosition = deathPos; } return; /*Jezus arc?*/} //sets position to be dead so that it doesn't move // returns if dead cuz we don't need to update anymore
         if (playerFound)
         {
-            //GD.Print("player found");
             Vector3 distanceVector = GlobalPosition - playerNode.GlobalPosition;
-            if (_navigationAgent.IsNavigationFinished() && distanceVector.Length() <= _navigationAgent.TargetDesiredDistance) { return; }
-
+            if (_navigationAgent.IsNavigationFinished() && distanceVector.Length() <= _navigationAgent.TargetDesiredDistance) { return; } //stops when player is in range
 
             if (timeSincePathfindingUpdate + (float)delta >= pathfindingUpdateTime)
             {
@@ -92,6 +97,28 @@ public partial class NavScript : CharacterBody3D
             else
             {
                 timeSincePathfindingUpdate += (float)delta;
+            }
+
+            //rotation
+            if (visualEnemy.Rotation.Y != targetRotation)
+            {
+                float difference = targetRotation - visualEnemy.Rotation.Y;
+                if (difference > Mathf.Pi) { difference -= 2 * Mathf.Pi; }          //correct the rotation so that it rotates to the side that is closest
+                if (-1 * difference > Mathf.Pi) { difference += 2 * Mathf.Pi; }
+
+                //determine what direction calc is needed in
+                if (Mathf.Abs(difference) > rotationSpeed * (float)delta) 
+                {
+                    if (difference < 0)
+                    {
+                        visualEnemy.Rotation -= new Vector3(0, rotationSpeed * (float)delta, 0); 
+                    }
+                    else
+                    {
+                        visualEnemy.Rotation -= new Vector3(0, -1 * rotationSpeed * (float)delta, 0);
+                    }
+                }
+                else { visualEnemy.Rotation = new Vector3(0, targetRotation, 0); }//just rotate, no calc needed
             }
         }
         else if (_navigationAgent.IsNavigationFinished()) { return; }
