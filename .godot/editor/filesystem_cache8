@@ -1,12 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1735313344
-::res://Assets/::1735313344
-icon.svg::CompressedTexture2D::5747307070527502943::1735313344::1735313348::1::::<><>::
+::res://::1736180638
+lvl0.tscn::PackedScene::-1::1735313408::0::1::::<><>::
+node_3d.tscn::PackedScene::-1::1735313408::0::1::::<><>::
+::res://Assets/::1736181715
 Lowpoly cowboy.blend::PackedScene::5133422091147269667::1735312642::1735313351::1::::<><>::uid://bksdvldwkqsk1::::res://Assets/textures/256x256 Grid.png
-Lowpoly cowboy.glb::PackedScene::2534315005101297600::1735313344::1735313349::1::::<><>::
+Lowpoly cowboy.glb::PackedScene::8234995575857558342::1736181610::1736181725::1::::<><>::
 Lowpoly cowboy_256x256 Grid.png::CompressedTexture2D::4604447305401278823::1735312642::1735313348::1::::<><>::
 Lowpoly cowboy_Untitled.png::CompressedTexture2D::44403896231473799::1735312642::1735313348::1::::<><>::
-::res://Assets/textures/::1735313344
+lvl0.glb::PackedScene::7980701133598539907::1735313408::1736180644::1::::<><>::uid://dnh7imp85mwo2::::res://Assets/lvl0_dungeon_texture.png
+lvl0_dungeon_texture.png::CompressedTexture2D::8088125547764133231::1735313408::1736180644::1::::<><>::
+::res://Assets/textures/::1735313349
 256x256 Grid.png::CompressedTexture2D::3125688155701660630::1735312642::1735313348::1::::<><>::
 ::res://Instance Scenes/::1735312642
 attack_hitbox.tscn::PackedScene::6534749506964784759::1735063247::0::1::::<><>::
