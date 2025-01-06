@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\piete\\source\\repos\\GodotInformatica\\New Game Project.csproj": {}
+    "C:\\USERS\\PIETE\\SOURCE\\REPOS\\GODOTINFORMATICA\\New Game Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\piete\\source\\repos\\GodotInformatica\\New Game Project.csproj": {
+    "C:\\USERS\\PIETE\\SOURCE\\REPOS\\GODOTINFORMATICA\\New Game Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\New Game Project.csproj",
+        "projectUniqueName": "C:\\USERS\\PIETE\\SOURCE\\REPOS\\GODOTINFORMATICA\\New Game Project.csproj",
         "projectName": "New Game Project",
-        "projectPath": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\New Game Project.csproj",
+        "projectPath": "C:\\USERS\\PIETE\\SOURCE\\REPOS\\GODOTINFORMATICA\\New Game Project.csproj",
         "packagesPath": "C:\\Users\\piete\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "C:\\USERS\\PIETE\\SOURCE\\REPOS\\GODOTINFORMATICA\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
