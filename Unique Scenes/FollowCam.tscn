@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/CameraScript.cs" id="1_x735l"]
 
 [node name="Camera3D" type="Camera3D"]
-transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 5.2, 4.2)
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 4.2, 5.2, 4.2)
 script = ExtResource("1_x735l")
 frameCount = 500
 

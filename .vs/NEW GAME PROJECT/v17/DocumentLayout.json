@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\",
+  "WorkspaceRootPath": "C:\\Users\\Piete\\source\\repos\\NewRepo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\navscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\newrepo\\scripts\\navscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\navscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\newrepo\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\newrepo\\scripts\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\camerascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\newrepo\\scripts\\camerascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\camerascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -64,11 +64,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "NavScript.cs",
-              "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\NavScript.cs",
+              "DocumentMoniker": "C:\\Users\\Piete\\source\\repos\\NewRepo\\Scripts\\NavScript.cs",
               "RelativeDocumentMoniker": "Scripts\\NavScript.cs",
-              "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\NavScript.cs",
+              "ToolTip": "C:\\Users\\Piete\\source\\repos\\NewRepo\\Scripts\\NavScript.cs",
               "RelativeToolTip": "Scripts\\NavScript.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAWwHoAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T16:37:58.056Z",
               "EditorCaption": ""
@@ -77,9 +77,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "PlayerScript.cs",
-              "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\PlayerScript.cs",
+              "DocumentMoniker": "C:\\Users\\Piete\\source\\repos\\NewRepo\\Scripts\\PlayerScript.cs",
               "RelativeDocumentMoniker": "Scripts\\PlayerScript.cs",
-              "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\PlayerScript.cs",
+              "ToolTip": "C:\\Users\\Piete\\source\\repos\\NewRepo\\Scripts\\PlayerScript.cs",
               "RelativeToolTip": "Scripts\\PlayerScript.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAAQwD0AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -89,22 +89,21 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Healthbar.cs",
-              "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\Healthbar.cs",
+              "DocumentMoniker": "C:\\Users\\Piete\\source\\repos\\NewRepo\\Scripts\\Healthbar.cs",
               "RelativeDocumentMoniker": "Scripts\\Healthbar.cs",
-              "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\Healthbar.cs",
+              "ToolTip": "C:\\Users\\Piete\\source\\repos\\NewRepo\\Scripts\\Healthbar.cs",
               "RelativeToolTip": "Scripts\\Healthbar.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T11:36:19.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T11:36:19.07Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "CameraScript.cs",
-              "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\CameraScript.cs",
+              "DocumentMoniker": "C:\\Users\\Piete\\source\\repos\\NewRepo\\Scripts\\CameraScript.cs",
               "RelativeDocumentMoniker": "Scripts\\CameraScript.cs",
-              "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\CameraScript.cs",
+              "ToolTip": "C:\\Users\\Piete\\source\\repos\\NewRepo\\Scripts\\CameraScript.cs",
               "RelativeToolTip": "Scripts\\CameraScript.cs",
               "ViewState": "AQIAACIAAAAAAAAAAAAUwDUAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

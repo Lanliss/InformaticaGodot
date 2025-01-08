@@ -13,6 +13,7 @@ config_version=5
 config/name="New Game Project"
 run/main_scene="res://Unique Scenes/GodotTryinsmthn.tscn"
 config/features=PackedStringArray("4.3", "C#", "Forward Plus")
+run/max_fps=60
 
 [autoload]
 
@@ -21,6 +22,10 @@ Messenger="*res://Scripts/Messenger.cs"
 [dotnet]
 
 project/assembly_name="New Game Project"
+
+[filesystem]
+
+import/blender/enabled=false
 
 [input]
 

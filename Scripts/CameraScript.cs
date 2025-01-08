@@ -13,35 +13,37 @@ public partial class CameraScript : Camera3D
 	[Export] private float camDetectDistanceZ = 1f;
 	[Export] private int frameCount = 20; //How many frames should it take the camera to go the distance //perhaps better for fixed update
 	[Export] private float speed = 1f;
-	[Export] private bool useCustomOffsetZ = false;
+	[Export] private bool useCustomOffset = false;
 	[Export] private float camOffsetZ = 4.2f;   //used for correcting within the camera movement.;
+	[Export] private float camOffsetX = 4.2f;
 
-    [ExportCategory("Ray Scan Properties")]
-    [ExportGroup("Ray Properties")]
-    [Export] private float rayLength = 1000f;
+	[ExportCategory("Ray Scan Properties")]
+	[ExportGroup("Ray Properties")]
+	[Export] private float rayLength = 1000f;
 
 	[ExportGroup("Collision Mask")]
 	[Export(PropertyHint.Layers2DNavigation)]
 	private uint collisionMask = 37;
 
-    [Signal]
+	[Signal]
 	public delegate void MousePosFoundEventHandler(Vector3 mousePosition);
 
 	public override void _Ready()
 	{
-		if(useCustomOffsetZ == true) { 
+		if(useCustomOffset == true) { 
 			camOffsetZ = GlobalPosition.Z;	//correct for cam position
+			camOffsetX = GlobalPosition.X;
 		}
 	}
 
 	public override void _PhysicsProcess(double delta)
 	{
-        Vector2 mousePos = GetViewport().GetMousePosition();
-        Vector3 from = ProjectRayOrigin(mousePos);
+		Vector2 mousePos = GetViewport().GetMousePosition();
+		Vector3 from = ProjectRayOrigin(mousePos);
 		Vector3 to = from + ProjectRayNormal(mousePos) * rayLength;
 		Godot.PhysicsDirectSpaceState3D space = GetWorld3D().DirectSpaceState;
 		PhysicsRayQueryParameters3D ray = new PhysicsRayQueryParameters3D();
-		ray.CollisionMask = collisionMask; //1, 4, 32. environment, enemy and pickups
+		ray.CollisionMask = collisionMask; //1, 4, 32. environment, enemy and pickups //collision mask is for what things the click should interact with
 
 		ray.From = from;
 		ray.To = to;
@@ -50,19 +52,18 @@ public partial class CameraScript : Camera3D
 		if (rayCastResult.ContainsKey("position"))
 		{
 			var mousePosition = (Vector3)rayCastResult["position"];
-            EmitSignal(SignalName.MousePosFound, mousePosition);
-			//GD.Print("Mouse Pos Found");
+			EmitSignal(SignalName.MousePosFound, mousePosition);
 		}
 		
 
-        //move camera X
-        if (_player.GlobalPosition.X - GlobalPosition.X >= camDetectDistanceX) 
+		//move camera X
+		if (_player.GlobalPosition.X - (GlobalPosition.X - camOffsetX) >= camDetectDistanceX) 
 		{
-			GlobalPosition += new Vector3((_player.GlobalPosition.X - (GlobalPosition.X + camDetectDistanceX)) / (frameCount * (float)delta), 0, 0);
+			GlobalPosition += new Vector3((_player.GlobalPosition.X - (GlobalPosition.X - camOffsetX + camDetectDistanceX)) / (frameCount * (float)delta), 0, 0);
 		}
-		else if (_player.GlobalPosition.X - GlobalPosition.X <= -1 * camDetectDistanceX) 
+		else if (_player.GlobalPosition.X - (GlobalPosition.X - camOffsetX) <= -1 * camDetectDistanceX) 
 		{
-			GlobalPosition += new Vector3((_player.GlobalPosition.X - (GlobalPosition.X - camDetectDistanceX)) / (frameCount * (float)delta), 0, 0);
+			GlobalPosition += new Vector3((_player.GlobalPosition.X - (GlobalPosition.X - camOffsetX - camDetectDistanceX)) / (frameCount * (float)delta), 0, 0);
 		}
 
 		//move camera Y

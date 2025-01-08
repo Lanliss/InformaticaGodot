@@ -95,9 +95,10 @@ public partial class PlayerScript : CharacterBody3D
 			{
 				velocity.X = direction.X * speed;
 				velocity.Z = direction.Z * speed;
-				_lookObject.Position = direction; //direction is already normalised
 				moveDirection = direction;
-			}
+				moveDirection = moveDirection.Rotated(Vector3.Up, 0.25f * MathF.PI);
+                _lookObject.Position = moveDirection;	//direction is already normalised
+            }
 			else
 			{
 				velocity.X = Mathf.MoveToward(Velocity.X, 0, speed);
@@ -134,6 +135,7 @@ public partial class PlayerScript : CharacterBody3D
         {
             if (attack2Cooldown - (float)delta >= 0) { attack2Cooldown -= (float)delta; } else { attack2Cooldown = 0; }
         }
+        velocity = velocity.Rotated(Vector3.Up, 0.25f * MathF.PI);
         Velocity = velocity;
 		MoveAndSlide();
 	}

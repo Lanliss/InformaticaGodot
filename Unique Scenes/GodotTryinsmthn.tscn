@@ -24,6 +24,8 @@ size = Vector2(50, 50)
 
 [node name="Enemy" parent="." instance=ExtResource("2_q62s7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.09006, 1.5, 1.34668)
+rotationSpeed = 2.5
+pathfindingUpdateTime = 0.1
 
 [node name="Floor" type="StaticBody3D" parent="."]
 
