@@ -1,34 +1,32 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1736873672
-lvl0.tscn::PackedScene::-1::1736873672::0::1::::<><>::
-node_3d.tscn::PackedScene::-1::1736873672::0::1::::<><>::
-::res://Assets/::1736873672
-icon.svg::CompressedTexture2D::5747307070527502943::1736873672::1736873717::1::::<><>::
-Lowpoly cowboy.glb::PackedScene::8234995575857558342::1736873672::1736873717::1::::<><>::
-Lowpoly cowboy_256x256 Grid.png::CompressedTexture2D::4604447305401278823::1736873672::1736873717::1::::<><>::
-Lowpoly cowboy_Untitled.png::CompressedTexture2D::44403896231473799::1736873672::1736873717::1::::<><>::
-lvl0.glb::PackedScene::7980701133598539907::1736873672::1736873717::1::::<><>::uid://dnh7imp85mwo2::::res://Assets/lvl0_dungeon_texture.png
-lvl0_dungeon_texture.png::CompressedTexture2D::8088125547764133231::1736873672::1736873717::1::::<><>::
-::res://Assets/textures/::1736873672
-256x256 Grid.png::CompressedTexture2D::3125688155701660630::1736873672::1736873717::1::::<><>::
-::res://Instance Scenes/::1736873672
-attack_hitbox.tscn::PackedScene::6534749506964784759::1736873672::0::1::::<><>::
-attack_hitbox_2.tscn::PackedScene::1880999185834537658::1736873672::0::1::::<><>::
-dummy.tscn::PackedScene::6782961174717611298::1736873672::0::1::::<><>::uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn
-Enemy.tscn::PackedScene::4627544011651792625::1736873672::0::1::::<><>::res://Scripts/NavScript.cs<>uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn<>uid://ded086ybmbdvt::::res://Instance Scenes/EnemyLoopinganimation.tscn<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn
-EnemyLoopinganimation.tscn::PackedScene::7447789080272310609::1736873672::0::1::::<><>::uid://bcdv2ellaj2wa::::res://Assets/Lowpoly cowboy.glb
-EnemyOsmanMESHFILE.tscn::PackedScene::4041246936244443015::1736873672::0::1::::<><>::uid://bcdv2ellaj2wa::::res://Assets/Lowpoly cowboy.glb
-healthbar.tscn::PackedScene::8637915731379965551::1736873672::0::1::::<><>::res://Scripts/Healthbar.cs
-TestCube.tscn::PackedScene::8541388896930186514::1736873672::0::1::::<><>::
-::res://Scripts/::1736873672
-CameraScript.cs::CSharpScript::-1::1736873672::0::1::::<>Camera3D<>::
-Healthbar.cs::CSharpScript::-1::1736873672::0::1::::<>Node3D<>::
-Messenger.cs::CSharpScript::-1::1736873672::0::1::::<>Node<>::
-NavScript.cs::CSharpScript::-1::1736873672::0::1::::<>CharacterBody3D<>::
-PlayerScript.cs::CSharpScript::-1::1736873672::0::1::::<>CharacterBody3D<>::
-UiNumberScript.cs::CSharpScript::-1::1736873672::0::1::::<>Control<>::
-::res://Unique Scenes/::1736873672
-FollowCam.tscn::PackedScene::2478559553035008294::1736873672::0::1::::<><>::res://Scripts/CameraScript.cs
-GodotTryinsmthn.tscn::PackedScene::2849313196763200652::1736873672::0::1::::<><>::uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>uid://dtxror4plrnag::::res://Instance Scenes/TestCube.tscn<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://c3vym50vcokec::::res://Instance Scenes/dummy.tscn<>uid://ct6hmu1m4gdrr::::res://Unique Scenes/UiNumber.tscn
-player.tscn::PackedScene::6209450061745544640::1736873672::0::1::::<><>::res://Scripts/PlayerScript.cs<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn
-UiNumber.tscn::PackedScene::6170872646577030879::1736873672::0::1::::<><>::res://Scripts/UiNumberScript.cs
+::res://::1736880104
+lvl0.tscn::PackedScene::6546431787902665069::1736880104::0::1::::<><>::uid://dlx58m21dkfk2::::res://Assets/levels/lvl0.glb
+node_3d.tscn::PackedScene::5523598074086501563::1735057451::0::1::::<><>::uid://bcdv2ellaj2wa::::res://Assets/Lowpoly cowboy.glb
+::res://Assets/::1736880104
+::res://Assets/Enemy/::1736880096
+gauntlet enemy.glb::PackedScene::6749144848743883974::1736880095::1736880096::1::::<><>::uid://m20upnw1wlc2::::res://Assets/Enemy/gauntlet enemy_dungeon_texture.png
+gauntlet enemy_dungeon_texture.png::CompressedTexture2D::899558772681173211::1736880096::1736880096::1::::<><>::
+::res://Assets/levels/::1736880104
+lvl0.glb::PackedScene::7980701133598539907::1735305013::1736880105::1::::<><>::uid://dnh7imp85mwo2::::res://Assets/levels/lvl0_dungeon_texture.png
+lvl0_dungeon_texture.png::CompressedTexture2D::8088125547764133231::1735305013::1736880105::1::::<><>::
+::res://Instance Scenes/::1734967270
+attack_hitbox.tscn::PackedScene::6534749506964784759::1734865348::0::1::::<><>::
+attack_hitbox_2.tscn::PackedScene::1880999185834537658::1734865348::0::1::::<><>::
+dummy.tscn::PackedScene::6782961174717611298::1734865348::0::1::::<><>::uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn
+Enemy.tscn::PackedScene::4627544011651792625::1734865348::0::1::::<><>::res://Scripts/NavScript.cs<>uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn
+healthbar.tscn::PackedScene::8637915731379965551::1734865348::0::1::::<><>::res://Scripts/Healthbar.cs
+TestCube.tscn::PackedScene::8541388896930186514::1734865348::0::1::::<><>::
+::res://Scripts/::1734865998
+CameraScript.cs::CSharpScript::-1::1734865348::0::1::::<>Camera3D<>::
+Healthbar.cs::CSharpScript::-1::1734865348::0::1::::<>Node3D<>::
+Messenger.cs::CSharpScript::-1::1734865348::0::1::::<>Node<>::
+NavScript.cs::CSharpScript::-1::1734865998::0::1::::<>CharacterBody3D<>::
+PlayerScript.cs::CSharpScript::-1::1734865348::0::1::::<>CharacterBody3D<>::
+UiNumberScript.cs::CSharpScript::-1::1734865348::0::1::::<>Control<>::
+::res://textures/::1734967291
+256x256 Grid.png::CompressedTexture2D::1278727258630554426::1734865348::1734865402::1::::<><>::
+::res://Unique Scenes/::1734865998
+FollowCam.tscn::PackedScene::2478559553035008294::1734865348::0::1::::<><>::res://Scripts/CameraScript.cs
+GodotTryinsmthn.tscn::PackedScene::2849313196763200652::1734865998::0::1::::<><>::uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>uid://dtxror4plrnag::::res://Instance Scenes/TestCube.tscn<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://c3vym50vcokec::::res://Instance Scenes/dummy.tscn<>uid://ct6hmu1m4gdrr::::res://Unique Scenes/UiNumber.tscn
+player.tscn::PackedScene::6209450061745544640::1734865348::0::1::::<><>::res://Scripts/PlayerScript.cs<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn
+UiNumber.tscn::PackedScene::6170872646577030879::1734865348::0::1::::<><>::res://Scripts/UiNumberScript.cs

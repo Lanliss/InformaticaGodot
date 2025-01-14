@@ -1,8 +1,1 @@
-res://Unique Scenes/GodotTryinsmthn.tscn
-res://Instance Scenes/Enemy.tscn
-res://Scripts/PlayerScript.cs
-res://Scripts/CameraScript.cs
-res://Scripts/Healthbar.cs
-res://Scripts/Messenger.cs
-res://Scripts/UiNumberScript.cs
-res://Scripts/NavScript.cs
+res://lvl0.tscn
