@@ -126,12 +126,13 @@ public partial class NavScript : CharacterBody3D
 
                 if (attackBuildUpTimer > 0f) //if in build up fase
                 {
-                    if (attackBuildUpTimer - (float)delta >= 0f) { attackBuildUpTimer -= (float)delta; } else { attackBuildUpTimer = 0f; }
-                    //TODO: play telegraph animation
+                    if (attackBuildUpTimer == attackBuildUpTime) { visualEnemy.GetNode<AnimationPlayer>("AnimationPlayer").Play("attack startup"); }
+                    if (attackBuildUpTimer - (float)delta > 0f) { attackBuildUpTimer -= (float)delta; } else { attackBuildUpTimer = 0f; visualEnemy.GetNode<AnimationPlayer>("AnimationPlayer").Play("Attack hitbox"); }
+                    
                 }
                 else
                 {
-                    //TODO: play attack animation
+                    
 
                     attackHitbox.Visible = true;
                     attackHitbox.GetChild<CollisionShape3D>(0).Disabled = false;
@@ -142,6 +143,7 @@ public partial class NavScript : CharacterBody3D
                         attackHitbox.GetChild<CollisionShape3D>(0).Disabled = true;
                         isAttacking = false;
                         attackHitbox.Visible = false;
+                        visualEnemy.GetNode<AnimationPlayer>("AnimationPlayer").Play("Guantlet_Idle"); //start idle anim again
                     }
                 }
             }

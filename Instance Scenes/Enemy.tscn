@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Scripts/NavScript.cs" id="1_7g6jv"]
 [ext_resource type="PackedScene" uid="uid://dvcjhe4agwqod" path="res://Instance Scenes/healthbar.tscn" id="1_muime"]
-[ext_resource type="PackedScene" uid="uid://ded086ybmbdvt" path="res://Instance Scenes/EnemyLoopinganimation.tscn" id="3_jgda8"]
 [ext_resource type="PackedScene" uid="uid://c0dqmtkmnerjr" path="res://Instance Scenes/attack_hitbox.tscn" id="4_jtcc1"]
+[ext_resource type="PackedScene" uid="uid://broog141cslat" path="res://Instance Scenes/NewerAnimationEnemy.tscn" id="4_nsidj"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ouiib"]
 
@@ -13,11 +13,10 @@
 height = 1.5
 radius = 6.0
 
-[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("_navigationAgent", "playerDetectionShape3D", "visualEnemy", "attackHitbox")]
+[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("_navigationAgent", "playerDetectionShape3D", "attackHitbox")]
 script = ExtResource("1_7g6jv")
 _navigationAgent = NodePath("NavigationAgent3D")
 playerDetectionShape3D = NodePath("DetectionArea3D/CollisionShape3D")
-visualEnemy = NodePath("LoopingAnimEnemy")
 attackHitbox = NodePath("AttackHitbox")
 pathDistance = 0.1
 targetDistance = 1.25
@@ -55,12 +54,12 @@ debug_enabled = true
 debug_use_custom = true
 debug_path_custom_color = Color(0.50171, 0.571719, 0.889622, 1)
 
-[node name="LoopingAnimEnemy" parent="." instance=ExtResource("3_jgda8")]
-
 [node name="AttackHitbox" parent="." instance=ExtResource("4_jtcc1")]
 collision_layer = 16
 collision_mask = 2
 metadata/dmg = 10
+
+[node name="gauntlet enemy" parent="." instance=ExtResource("4_nsidj")]
 
 [connection signal="updateHealthToNav" from="Healthbar" to="." method="Die"]
 [connection signal="body_entered" from="DetectionArea3D" to="." method="OnPlayerDetected"]

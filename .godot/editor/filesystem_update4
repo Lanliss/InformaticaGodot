@@ -7,3 +7,9 @@ res://Scripts/NavScript.cs
 res://Scripts/Healthbar.cs
 res://Scripts/PlayerScript.cs
 res://Unique Scenes/player.tscn
+res://Instance Scenes/EnemyLoopinganimation.tscn
+res://newAnimatedEnemy.tscn
+res://Instance Scenes/newAnimatedEnemy.tscn
+res://NewerAnimationEnemy.tscn
+res://Instance Scenes/NewerAnimationEnemy.tscn
+res://Unique Scenes/FollowCam.tscn
