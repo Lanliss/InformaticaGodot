@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://cup50aaop1qpc"]
+[gd_scene load_steps=10 format=3 uid="uid://cup50aaop1qpc"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerScript.cs" id="1_jukd8"]
 [ext_resource type="PackedScene" uid="uid://c0dqmtkmnerjr" path="res://Instance Scenes/attack_hitbox.tscn" id="2_8afs3"]
+[ext_resource type="PackedScene" uid="uid://dvcjhe4agwqod" path="res://Instance Scenes/healthbar.tscn" id="2_w7ge8"]
 [ext_resource type="PackedScene" uid="uid://12f1ty21gw23" path="res://Instance Scenes/attack_hitbox_2.tscn" id="3_idman"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vt3mt"]
@@ -11,6 +12,8 @@
 [sub_resource type="SphereShape3D" id="SphereShape3D_10lv5"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_70pvk"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rncd1"]
 
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("_lookObject", "attackHitbox", "attackHitbox2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
@@ -22,7 +25,11 @@ projectileSpeed = 100.0
 attackHitbox = NodePath("AttackHitbox")
 attackHitbox2 = NodePath("AttackHitbox2")
 attackDuration2 = 0.1
-attackCooldown2 = 0.3
+attackCooldown2 = 3.0
+
+[node name="Healthbar" parent="." node_paths=PackedStringArray("parentCollisionArea") instance=ExtResource("2_w7ge8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0)
+parentCollisionArea = NodePath("../Area3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_vt3mt")
@@ -49,3 +56,10 @@ collision_mask = 4
 visible = false
 collision_layer = 8
 collision_mask = 4
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 16
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("CapsuleShape3D_rncd1")

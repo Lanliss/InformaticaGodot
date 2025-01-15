@@ -59,7 +59,7 @@ public partial class NavScript : CharacterBody3D
         {
             deathPos = GlobalPosition;
             dead = true;
-        }
+        } 
         else if (!dead && !playerFound)
         { //this part of the function is not death related
 

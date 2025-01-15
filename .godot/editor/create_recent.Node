@@ -1,10 +1,10 @@
+CollisionShape3D
+Area3D
 Label
 Panel
 Node
 NavigationObstacle3D
 NavigationAgent3D
-CollisionShape3D
-Area3D
 MeshInstance3D
 CharacterBody3D
 NavigationRegion3D
@@ -12,4 +12,3 @@ Camera3D
 RayCast3D
 SubViewport
 Sprite3D
-Node3D
