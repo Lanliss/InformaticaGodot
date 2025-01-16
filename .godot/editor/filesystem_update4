@@ -14,3 +14,5 @@ res://Instance Scenes/attack_hitbox.tscn
 res://Instance Scenes/attack_hitbox_2.tscn
 res://Instance Scenes/AttackHitboxScript.cs
 res://Instance Scenes/TestCube.tscn
+res://Unique Scenes/level_0.tscn
+res://Unique Scenes/lvl_0.tscn
