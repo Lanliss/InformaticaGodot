@@ -11,6 +11,7 @@ transparency = 1
 albedo_color = Color(1, 0, 0, 0.392157)
 
 [node name="AttackHitbox" type="Area3D"]
+visible = false
 collision_layer = 0
 collision_mask = 0
 metadata/dmg = 25

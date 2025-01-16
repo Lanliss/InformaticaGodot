@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://12f1ty21gw23"]
+[gd_scene load_steps=5 format=3 uid="uid://12f1ty21gw23"]
+
+[ext_resource type="Script" path="res://Instance Scenes/AttackHitboxScript.cs" id="1_68fql"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_uaasb"]
 size = Vector3(0.5, 1, 5)
@@ -10,9 +12,12 @@ size = Vector3(0.5, 1, 5)
 transparency = 1
 albedo_color = Color(1, 0, 0, 0.392157)
 
-[node name="AttackHitbox" type="Area3D"]
+[node name="AttackHitbox" type="Area3D" node_paths=PackedStringArray("collisionShape")]
+visible = false
 collision_layer = 0
 collision_mask = 0
+script = ExtResource("1_68fql")
+collisionShape = NodePath("CollisionShape3D")
 metadata/dmg = 15
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -24,3 +29,5 @@ disabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 mesh = SubResource("BoxMesh_n8x4t")
 surface_material_override/0 = SubResource("StandardMaterial3D_urovg")
+
+[connection signal="body_entered" from="." to="." method="KillProjectile"]

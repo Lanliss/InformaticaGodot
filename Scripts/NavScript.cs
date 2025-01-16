@@ -1,4 +1,5 @@
 using Godot;
+using System;
 
 public partial class NavScript : CharacterBody3D
 {
@@ -16,18 +17,28 @@ public partial class NavScript : CharacterBody3D
 
     [ExportCategory("Attack Settings")]
     [Export] private float attackRange = 1f;
+    [Export] private bool isRanged = false;
 
     [ExportSubgroup("Attack1")]
-    [Export] private Area3D attackHitbox;
+    [Export] private Area3D attackHitbox1;
     [Export] private float attackBuildUpTime = 0.5f;
     [Export] private float attackDuration1 = 0.25f;
     [Export] private float attackCooldown1 = 1f;
+
+    [ExportSubgroup("Attack2")]
+    [Export] private Area3D attackHitbox2;
+    [Export] private float projectileSpeed = 100f;
+    [Export] private float attackBuildUpTime2 = 0.5f;
+    [Export] private float attackDuration2 = 0.25f;
+    [Export] private float attackCooldown2 = 2.5f;
 
     [ExportCategory("Pathfinding settings")]
     [Export]
     private float pathDistance = 1f;
     [Export]
     private float targetDistance = 0.5f;
+    [Export]
+    private float targetRangedDistance = 2.5f;
     [Export]
     private float pathfindingUpdateTime = 0.01f;
     [Export]
@@ -36,8 +47,11 @@ public partial class NavScript : CharacterBody3D
     private bool dead = false;
     //end of exports
 
+    private Area3D attackHitbox;
+    private Vector3 projectileVector;
     private float attackBuildUpTimer = 0f;
     private float attack1Cooldown = 0f;
+    private float attack2Cooldown = 0f;
     private float lastAttacked = 0f;
     private bool isAttacking = false;
     private float targetRotation;
@@ -52,6 +66,8 @@ public partial class NavScript : CharacterBody3D
         get { return _navigationAgent.TargetPosition; }
         set { _navigationAgent.TargetPosition = value; }
     }
+
+    
 
     public void Die(int health)
     {
@@ -73,12 +89,20 @@ public partial class NavScript : CharacterBody3D
         _movementTargetPosition = GlobalPosition;
 
         _navigationAgent.PathDesiredDistance = pathDistance;
-        _navigationAgent.TargetDesiredDistance = targetDistance;
         _navigationAgent.AvoidancePriority = priority;
+        if (isRanged) 
+        {
+            attackHitbox = attackHitbox2;
+            _navigationAgent.TargetDesiredDistance = targetRangedDistance;
+        }
+        else
+        {
+            attackHitbox = attackHitbox1;
+            _navigationAgent.TargetDesiredDistance = targetDistance;
+        }
 
         Callable.From(ActorSetup).CallDeferred();
     }
-
     public void OnVelocity(Vector3 safeVelocity)
     {
         Velocity = safeVelocity;
@@ -105,17 +129,30 @@ public partial class NavScript : CharacterBody3D
             {
                 targetRotation = Mathf.Atan2(distanceVector.X, distanceVector.Z);
 
-                if (!isAttacking && attack1Cooldown == 0f)
+                if (!isAttacking)
                 {
-                    //initiate attack
-                    lastAttacked = 0;
-                    isAttacking = true;
-                    attack1Cooldown = attackCooldown1;
-                    attackBuildUpTimer = attackBuildUpTime;
-                    //attackHitbox.Visible = true;
-                    //attackHitbox.GetChild<CollisionShape3D>(0).Disabled = false;
-                    attackHitbox.Position = new Vector3(distanceVector.X, attackHitbox.Position.Y, distanceVector.Z).Normalized() * attackRange;
-                    attackHitbox.Rotation = new Vector3(0, Mathf.Atan2(distanceVector.X, distanceVector.Z), 0);
+                    if (!isRanged && attack1Cooldown == 0f)
+                    {
+                        //initiate attack1
+                        lastAttacked = 0;
+                        isAttacking = true;
+                        attack1Cooldown = attackCooldown1;
+                        attackBuildUpTimer = attackBuildUpTime;
+
+                        attackHitbox.Position = new Vector3(distanceVector.X, attackHitbox.Position.Y, distanceVector.Z).Normalized() * attackRange;
+                        attackHitbox.Rotation = new Vector3(0, Mathf.Atan2(distanceVector.X, distanceVector.Z), 0);
+                    }
+                    if (isRanged && attack2Cooldown == 0f) 
+                    {
+                        lastAttacked = 0;
+                        isAttacking = true;
+                        attack2Cooldown = attackCooldown2;
+                        attackBuildUpTimer = attackBuildUpTime;
+
+                        attackHitbox.Position = new Vector3(distanceVector.X, attackHitbox.Position.Y, distanceVector.Z).Normalized() * attackRange;
+                        attackHitbox.Rotation = new Vector3(0, Mathf.Atan2(distanceVector.X, distanceVector.Z), 0);
+                        projectileVector = attackHitbox.Position;
+                    }
                 }
                 
             }
@@ -127,18 +164,27 @@ public partial class NavScript : CharacterBody3D
                 if (attackBuildUpTimer > 0f) //if in build up fase
                 {
                     if (attackBuildUpTimer == attackBuildUpTime) { visualEnemy.GetNode<AnimationPlayer>("AnimationPlayer").Play("attack startup"); }
-                    if (attackBuildUpTimer - (float)delta > 0f) { attackBuildUpTimer -= (float)delta; } else { attackBuildUpTimer = 0f; visualEnemy.GetNode<AnimationPlayer>("AnimationPlayer").Play("Attack hitbox"); }
+                    if (attackBuildUpTimer - (float)delta > 0f) { attackBuildUpTimer -= (float)delta; } 
+                    else 
+                    { 
+                        attackBuildUpTimer = 0f; 
+                        visualEnemy.GetNode<AnimationPlayer>("AnimationPlayer").Play("Attack hitbox");
+                        attackHitbox.Visible = true;
+                        attackHitbox.GetChild<CollisionShape3D>(0).Disabled = false;
+                    }
                     
                 }
                 else
                 {
-                    
+                    if (isRanged)
+                    {
+                        attackHitbox.Position += projectileVector * (float)delta * projectileSpeed;
+                    }
 
-                    attackHitbox.Visible = true;
-                    attackHitbox.GetChild<CollisionShape3D>(0).Disabled = false;
+
 
                     lastAttacked += (float)delta;
-                    if (lastAttacked >= attackDuration1) //attack cooldown is done
+                    if ((lastAttacked >= attackDuration1 && !isRanged)||(lastAttacked >= attackDuration2 && isRanged)) //attack cooldown is done
                     {
                         attackHitbox.GetChild<CollisionShape3D>(0).Disabled = true;
                         isAttacking = false;
@@ -152,7 +198,10 @@ public partial class NavScript : CharacterBody3D
             {
                 if (attack1Cooldown - (float)delta >= 0f) { attack1Cooldown -= (float)delta; } else { attack1Cooldown = 0f; }
             }
-
+            if (attack2Cooldown > 0f)
+            {
+                if (attack2Cooldown - (float)delta >= 0f) { attack2Cooldown -= (float)delta; } else { attack2Cooldown = 0f; }
+            }
 
 
             if (timeSincePathfindingUpdate + (float)delta >= pathfindingUpdateTime)
@@ -190,9 +239,11 @@ public partial class NavScript : CharacterBody3D
             if (_navigationAgent.IsNavigationFinished()) { return; }
             Vector3 currentAgentPosition = GlobalTransform.Origin;
             Vector3 nextPathPosition = _navigationAgent.GetNextPathPosition();
-
-            Vector3 unsafeVelocity = currentAgentPosition.DirectionTo(nextPathPosition) * moveSpeed;
-            _navigationAgent.SetVelocity(unsafeVelocity);
+            if (!isAttacking)
+            {
+                Vector3 unsafeVelocity = currentAgentPosition.DirectionTo(nextPathPosition) * moveSpeed;
+                _navigationAgent.SetVelocity(unsafeVelocity);
+            }
         }
     }
     private async void ActorSetup()

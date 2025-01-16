@@ -23,8 +23,10 @@ script = ExtResource("1_jukd8")
 _lookObject = NodePath("TempDirectionIndicator")
 projectileSpeed = 100.0
 attackHitbox = NodePath("AttackHitbox")
+attackBuildUpTime1 = 0.0
 attackHitbox2 = NodePath("AttackHitbox2")
-attackDuration2 = 0.1
+attackBuildUpTime2 = 0.0
+attackDuration2 = 0.25
 attackCooldown2 = 3.0
 
 [node name="Healthbar" parent="." node_paths=PackedStringArray("parentCollisionArea") instance=ExtResource("2_w7ge8")]
@@ -48,12 +50,10 @@ disabled = true
 mesh = SubResource("SphereMesh_70pvk")
 
 [node name="AttackHitbox" parent="." instance=ExtResource("2_8afs3")]
-visible = false
 collision_layer = 8
 collision_mask = 4
 
 [node name="AttackHitbox2" parent="." instance=ExtResource("3_idman")]
-visible = false
 collision_layer = 8
 collision_mask = 4
 

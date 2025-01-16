@@ -14,8 +14,8 @@ public partial class CameraScript : Camera3D
 	[Export] private int frameCount = 20; //How many frames should it take the camera to go the distance //perhaps better for fixed update
 	[Export] private float speed = 1f;
 	[Export] private bool useCustomOffset = false;
-	[Export] private float camOffsetZ = 4.2f;   //used for correcting within the camera movement.;
-	[Export] private float camOffsetX = 4.2f;
+	[Export] private float camOffsetZ = 6f;   //used for correcting within the camera movement.;
+	[Export] private float camOffsetX = 6f;
 
 	[ExportCategory("Ray Scan Properties")]
 	[ExportGroup("Ray Properties")]

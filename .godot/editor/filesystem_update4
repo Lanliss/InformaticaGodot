@@ -1,15 +1,16 @@
 res://Unique Scenes/GodotTryinsmthn.tscn
 res://Instance Scenes/Enemy.tscn
+res://Unique Scenes/player.tscn
+res://Instance Scenes/NewerAnimationEnemy.tscn
+res://Unique Scenes/FollowCam.tscn
 res://Scripts/CameraScript.cs
 res://Scripts/UiNumberScript.cs
 res://Scripts/Messenger.cs
 res://Scripts/NavScript.cs
 res://Scripts/Healthbar.cs
 res://Scripts/PlayerScript.cs
-res://Unique Scenes/player.tscn
-res://Instance Scenes/EnemyLoopinganimation.tscn
-res://newAnimatedEnemy.tscn
-res://Instance Scenes/newAnimatedEnemy.tscn
-res://NewerAnimationEnemy.tscn
-res://Instance Scenes/NewerAnimationEnemy.tscn
-res://Unique Scenes/FollowCam.tscn
+res://Instance Scenes/RangedEnemy.tscn
+res://Instance Scenes/attack_hitbox.tscn
+res://Instance Scenes/attack_hitbox_2.tscn
+res://Instance Scenes/AttackHitboxScript.cs
+res://Instance Scenes/TestCube.tscn
