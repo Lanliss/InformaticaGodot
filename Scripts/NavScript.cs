@@ -47,6 +47,8 @@ public partial class NavScript : CharacterBody3D
     private bool dead = false;
     //end of exports
 
+    private Messenger _messengerSingleton; //Messenger singleton
+
     private Area3D attackHitbox;
     private Vector3 projectileVector;
     private float attackBuildUpTimer = 0f;
@@ -75,6 +77,7 @@ public partial class NavScript : CharacterBody3D
         {
             deathPos = GlobalPosition;
             dead = true;
+            _messengerSingleton.EmitSignal(nameof(_messengerSingleton.OnEnemyDeath));
         } 
         else if (!dead && !playerFound)
         { //this part of the function is not death related
@@ -86,6 +89,8 @@ public partial class NavScript : CharacterBody3D
 
     public override void _Ready()
     {
+        _messengerSingleton = GetNode<Messenger>("/root/Messenger"); //get the singleton
+
         _movementTargetPosition = GlobalPosition;
 
         _navigationAgent.PathDesiredDistance = pathDistance;

@@ -6,7 +6,7 @@ public partial class AttackHitboxScript : Area3D
 
     public void Collided(Node3D body)
     {
-
+        if (body.IsClass("CharachterBody3D") && body.Name != "PlayerBody3D") { GD.Print("prevented deletion due to self hit"); return; }
         Visible = false;
 
         CallDeferred(AttackHitboxScript.MethodName.DisableThisThing);

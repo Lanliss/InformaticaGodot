@@ -8,12 +8,14 @@ public partial class Messenger : Node
 	public delegate void TriggerCooldownTimerEventHandler(int index, float value);
 	[Signal]
 	public delegate void OnStartCooldownEventHandler(int index, float value);
+	[Signal]
+	public delegate void OnEnemyDeathEventHandler();
+
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 		OnStartCooldown += DoTriggerCooldownTimer;
-
 	}
 
 	private void DoTriggerCooldownTimer(int index, float value) 

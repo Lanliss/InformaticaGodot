@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hTJDjCqlvmA=",
+  "dgSpecHash": "v5IzmG//CD8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Piete\\source\\repos\\InformaticaGodotGame\\New Game Project.csproj",
+  "projectFilePath": "C:\\Users\\Piete\\source\\repos\\NewRepo\\New Game Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Piete\\.nuget\\packages\\godot.sourcegenerators\\4.3.0\\godot.sourcegenerators.4.3.0.nupkg.sha512",
     "C:\\Users\\Piete\\.nuget\\packages\\godotsharp\\4.3.0\\godotsharp.4.3.0.nupkg.sha512",

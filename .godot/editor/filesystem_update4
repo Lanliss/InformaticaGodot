@@ -1,18 +1,14 @@
+res://Unique Scenes/lvl_0.tscn
+res://Scripts/CameraScript.cs
+res://Scripts/PlayerScript.cs
+res://Scripts/Healthbar.cs
+res://Scripts/Messenger.cs
+res://Scripts/GameHandlerlv0.cs
+res://Scripts/NavScript.cs
+res://Instance Scenes/AttackHitboxScript.cs
+res://Scripts/UiNumberScript.cs
 res://Unique Scenes/GodotTryinsmthn.tscn
 res://Instance Scenes/Enemy.tscn
 res://Unique Scenes/player.tscn
-res://Instance Scenes/NewerAnimationEnemy.tscn
-res://Unique Scenes/FollowCam.tscn
-res://Scripts/CameraScript.cs
-res://Scripts/UiNumberScript.cs
-res://Scripts/Messenger.cs
-res://Scripts/NavScript.cs
-res://Scripts/Healthbar.cs
-res://Scripts/PlayerScript.cs
-res://Instance Scenes/RangedEnemy.tscn
-res://Instance Scenes/attack_hitbox.tscn
-res://Instance Scenes/attack_hitbox_2.tscn
-res://Instance Scenes/AttackHitboxScript.cs
 res://Instance Scenes/TestCube.tscn
-res://Unique Scenes/level_0.tscn
-res://Unique Scenes/lvl_0.tscn
+res://Unique Scenes/FollowCam.tscn

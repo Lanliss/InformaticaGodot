@@ -1,6 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://db6t4pwtmgmfu"]
+[gd_scene load_steps=19 format=3 uid="uid://db6t4pwtmgmfu"]
 
 [ext_resource type="PackedScene" uid="uid://dlx58m21dkfk2" path="res://Assets/levels/lvl0.glb" id="1_pqlfv"]
+[ext_resource type="Script" path="res://Scripts/GameHandlerlv0.cs" id="2_luk3h"]
 [ext_resource type="PackedScene" uid="uid://b66u8dxojywcf" path="res://Instance Scenes/Enemy.tscn" id="2_qp0q7"]
 [ext_resource type="PackedScene" uid="uid://cup50aaop1qpc" path="res://Unique Scenes/player.tscn" id="3_svj7e"]
 [ext_resource type="PackedScene" uid="uid://bbkvrp4dyvmi5" path="res://Unique Scenes/FollowCam.tscn" id="4_x4acg"]
@@ -47,9 +48,32 @@ size = Vector3(3.46497, 3.43921, 3.20166)
 size = Vector3(33, 1, 29.44)
 
 [node name="lvl0" instance=ExtResource("1_pqlfv")]
+script = ExtResource("2_luk3h")
+enemyCount = 3
+nextLevelWaitAmount = 2.0
+nextLevelSceneAdress = "res://Unique Scenes/GodotTryinsmthn.tscn"
+
+[node name="coin_stack_small_001" parent="." index="17"]
+visible = false
+
+[node name="coin_stack_medium_001" parent="." index="18"]
+visible = false
+
+[node name="coin_stack_large_001" parent="." index="19"]
+visible = false
+
+[node name="coin_stack_small_001 Duplicator" parent="." index="20"]
+visible = false
+
+[node name="coin_stack_large_001 Duplicator" parent="." index="21"]
+visible = false
+
+[node name="coin_stack_medium_001 Duplicator" parent="." index="22"]
+visible = false
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="." index="25"]
 transform = Transform3D(0.88, 0, 0, 0, 0.785, 0, 0, 0, 0.96, -2, 0, 0)
+visible = false
 navigation_mesh = SubResource("NavigationMesh_0ft0q")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D" index="0"]
@@ -113,8 +137,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7871, 1.92811, -8.59727)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5673, 1.38822, -14.4137)
 isRanged = true
 
-[node name="Player" parent="." index="29" instance=ExtResource("3_svj7e")]
+[node name="PlayerBody3D" parent="." index="29" instance=ExtResource("3_svj7e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2.5, -2)
 
-[node name="Camera3D" parent="Player" index="9" instance=ExtResource("4_x4acg")]
-transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 8, 5.5, 4)
+[node name="Camera3D" parent="." index="30" node_paths=PackedStringArray("_player") instance=ExtResource("4_x4acg")]
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 12, 8, 2)
+_player = NodePath("../PlayerBody3D")
+
+[connection signal="MousePosFound" from="Camera3D" to="PlayerBody3D" method="OnMousePosition"]

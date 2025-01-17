@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="New Game Project"
-run/main_scene="res://Unique Scenes/GodotTryinsmthn.tscn"
+run/main_scene="res://Unique Scenes/lvl_0.tscn"
 config/features=PackedStringArray("4.3", "C#", "Forward Plus")
 run/max_fps=60
 
