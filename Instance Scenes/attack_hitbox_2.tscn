@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://12f1ty21gw23"]
 
-[ext_resource type="Script" path="res://Instance Scenes/AttackHitboxScript.cs" id="1_68fql"]
+[ext_resource type="Script" path="res://Scripts/AttackHitboxScript.cs" id="1_68fql"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_uaasb"]
 size = Vector3(0.5, 1, 5)

@@ -13,3 +13,7 @@ res://Scripts/PlayerScript.cs
 res://Instance Scenes/AttackHitboxScript.cs
 res://Scripts/Healthbar.cs
 res://Instance Scenes/EnemyRanged.tscn
+res://DeathScreen.cs
+res://Unique Scenes/DeathScreen.tscn
+res://Scripts/DeathScreen.cs
+res://Scripts/AttackHitboxScript.cs

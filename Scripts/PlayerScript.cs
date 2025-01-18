@@ -10,6 +10,7 @@ public partial class PlayerScript : CharacterBody3D
 	[Export] private float speed = 5f;
 	[Export] private float dashDistance = 2.5f;
 	[Export] private float dashCooldownTime = 0.5f;
+	[Export] private string deathScreenSceneAdress;
 
 	[ExportCategory("Attack Settings")]
     [Export] private float attackRange = 1f;
@@ -41,6 +42,7 @@ public partial class PlayerScript : CharacterBody3D
 	private float attack1Cooldown = 0f;
 	private float attack2Cooldown = 0f;
 	private float dashCooldown = 0f;
+	private bool dead = false;
 	
 	public override void _Ready()
 	{
@@ -71,11 +73,17 @@ public partial class PlayerScript : CharacterBody3D
 
     public void Die(int health)
     {
-		GD.Print("Add death functionality");
+		if (health <= 0) { dead = true; CallDeferred(PlayerScript.MethodName.SwitchToDeathScene); }
     }
 
-    public override void _PhysicsProcess(double delta)
+	private void SwitchToDeathScene() 
 	{
+        GetTree().ChangeSceneToFile(deathScreenSceneAdress);
+    }
+
+	public override void _PhysicsProcess(double delta)
+	{
+		if (dead) {return; }//the jezus arc returns
 		Vector3 velocity = Velocity;
 
 		// Add the gravity.

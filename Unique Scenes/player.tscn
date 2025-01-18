@@ -22,6 +22,7 @@ collision_layer = 2
 collision_mask = 53
 script = ExtResource("1_jukd8")
 _lookObject = NodePath("TempDirectionIndicator")
+deathScreenSceneAdress = "res://Unique Scenes/DeathScreen.tscn"
 projectileSpeed = 100.0
 attackHitbox = NodePath("AttackHitbox")
 attackBuildUpTime1 = 0.0
@@ -86,3 +87,5 @@ scale = Vector2(2.5, 2.5)
 size_flags_vertical = 4
 timerID = 3
 metadata/_edit_use_anchors_ = true
+
+[connection signal="updateHealthToNav" from="Healthbar" to="." method="Die"]
