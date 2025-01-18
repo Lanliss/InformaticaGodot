@@ -1,27 +1,65 @@
-[gd_scene load_steps=2 format=3 uid="uid://c0tbgrbmxpcnu"]
+[gd_scene load_steps=3 format=3 uid="uid://cgxm87ij1dajb"]
 
 [ext_resource type="VideoStream" path="res://menu stuff/Bold-Colorful-Modern-Elegant-YouTube-Intro-Video-_1_.ogv" id="1_a8kna"]
+[ext_resource type="Script" path="res://Scripts/Mainmenu.cs" id="1_gsfl8"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 768.0
+offset_bottom = 440.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_gsfl8")
+nextLevelSceneAdress = "res://Unique Scenes/lvl_0.tscn"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(959, 541)
+anchor_mode = 0
 zoom = Vector2(0.6, 0.6)
-
-[node name="Button" type="Button" parent="Camera2D"]
-offset_right = 8.0
-offset_bottom = 8.0
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1920.0
+offset_bottom = 1088.0
 stream = ExtResource("1_a8kna")
 autoplay = true
 loop = true
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = 237.0
+offset_right = 25.0
+offset_bottom = 277.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4, 4)
+pivot_offset = Vector2(25, 20)
+text = "Play"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = 401.0
+offset_right = 25.0
+offset_bottom = 441.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+pivot_offset = Vector2(25, 20)
+text = "Quit"
+
+[connection signal="pressed" from="Button" to="." method="OnStartButton"]
+[connection signal="pressed" from="Button2" to="." method="OnQuitButton"]

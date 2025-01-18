@@ -11,13 +11,17 @@ config_version=5
 [application]
 
 config/name="New Game Project"
-run/main_scene="res://Unique Scenes/lvl_0.tscn"
+run/main_scene="res://Unique Scenes/Mainmenu.tscn"
 config/features=PackedStringArray("4.3", "C#", "Forward Plus")
 run/max_fps=60
 
 [autoload]
 
 Messenger="*res://Scripts/Messenger.cs"
+
+[display]
+
+window/size/resizable=false
 
 [dotnet]
 
@@ -74,3 +78,4 @@ attack2={
 3d_physics/layer_5="EnemyAttack"
 3d_physics/layer_6="Item"
 3d_physics/layer_7="PathFindingTriggerBox"
+3d_physics/layer_8="NoGoZones"

@@ -78,10 +78,14 @@ public partial class NavScript : CharacterBody3D
             deathPos = GlobalPosition;
             dead = true;
             _messengerSingleton.EmitSignal(nameof(_messengerSingleton.OnEnemyDeath));
+            CollisionLayer = 0;
+            attackHitbox.GetChild<CollisionShape3D>(0).Disabled = true;
+            attackHitbox.Visible = false;
+            //play death anim
         } 
         else if (!dead && !playerFound)
         { //this part of the function is not death related
-
+            //if the enemy is damaged, increase the detection range in order to agro
             playerDetectionShape3D.Shape.Set(CylinderShape3D.PropertyName.Radius, 100f);
 
         }

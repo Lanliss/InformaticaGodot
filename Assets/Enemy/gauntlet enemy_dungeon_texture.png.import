@@ -2,14 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://m20upnw1wlc2"
+uid="uid://b7mormbkc5uhw"
 path.s3tc="res://.godot/imported/gauntlet enemy_dungeon_texture.png-83738a04f681078638c11d7ad7ccd624.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "33c924802a36c4f3415e10bb6940e832"
 }
 
 [deps]

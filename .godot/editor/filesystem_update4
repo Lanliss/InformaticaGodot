@@ -1,20 +1,20 @@
+res://Scripts/Messenger.cs
+res://Scripts/CameraScript.cs
+res://Scripts/Healthbar.cs
+res://Scripts/NavScript.cs
+res://Scripts/PlayerScript.cs
+res://Scripts/UiNumberScript.cs
+res://Instance Scenes/dummy.tscn
 res://Unique Scenes/GodotTryinsmthn.tscn
 res://Instance Scenes/Enemy.tscn
-res://Unique Scenes/player.tscn
-res://Instance Scenes/TestCube.tscn
-res://Unique Scenes/lvl_0.tscn
-res://Unique Scenes/FollowCam.tscn
-res://Scripts/CameraScript.cs
-res://Scripts/UiNumberScript.cs
-res://Scripts/Messenger.cs
-res://Scripts/NavScript.cs
-res://Scripts/GameHandlerlv0.cs
-res://Scripts/PlayerScript.cs
-res://Instance Scenes/AttackHitboxScript.cs
-res://Scripts/Healthbar.cs
-res://Instance Scenes/EnemyRanged.tscn
-res://DeathScreen.cs
-res://Unique Scenes/DeathScreen.tscn
-res://Scripts/DeathScreen.cs
+res://Unique Scenes/Mainmenu.tscn
 res://Scripts/AttackHitboxScript.cs
+res://Scripts/DeathScreen.cs
+res://Scripts/GameHandlerlv0.cs
+res://Scripts/Mainmenu.cs
+res://Unique Scenes/lvl_0.tscn
 res://Unique Scenes/lvl1.tscn
+res://Unique Scenes/player.tscn
+res://Unique Scenes/lvl_2.tscn
+res://Instance Scenes/Barrels.tscn
+res://Instance Scenes/Table1DELETEME.tscn

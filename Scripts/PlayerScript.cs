@@ -84,6 +84,8 @@ public partial class PlayerScript : CharacterBody3D
 	public override void _PhysicsProcess(double delta)
 	{
 		if (dead) {return; }//the jezus arc returns
+
+		if (GlobalPosition.Y <= -1f) { GetTree().ReloadCurrentScene(); }
 		Vector3 velocity = Velocity;
 
 		// Add the gravity.

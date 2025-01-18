@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://tlrmgypoiem5"]
-
-[ext_resource type="PackedScene" uid="uid://cottgllf154qw" path="res://Assets/levels/lvl2.glb" id="1_nkjth"]
-
-[node name="Node3D" type="Node3D"]
-
-[node name="lvl2" parent="." instance=ExtResource("1_nkjth")]

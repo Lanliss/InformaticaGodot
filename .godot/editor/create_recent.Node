@@ -1,13 +1,13 @@
+NavigationRegion3D
 CollisionShape3D
 StaticBody3D
+CollisionPolygon3D
 RichTextLabel
 Button
 Label
 Container
 ColorRect
-NavigationRegion3D
 MeshInstance3D
-CollisionPolygon3D
 Area3D
 Panel
 Node

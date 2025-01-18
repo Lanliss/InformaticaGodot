@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bxtu0ncu8n1mp"]
-
-[ext_resource type="PackedScene" uid="uid://bcdv2ellaj2wa" path="res://Assets/Lowpoly cowboy.glb" id="1_yn2rf"]
-
-[node name="Node3D" type="Node3D"]
-
-[node name="Lowpoly cowboy" parent="." instance=ExtResource("1_yn2rf")]
