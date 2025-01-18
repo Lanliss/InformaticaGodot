@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ys1nye3lbp8l"]
+
+[ext_resource type="PackedScene" uid="uid://cqa4s1kb6jen1" path="res://Assets/levels/lvl1.glb" id="1_deh1v"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="lvl1" parent="." instance=ExtResource("1_deh1v")]
