@@ -1,8 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737206287
+::res://::1737206444
 lvl1.tscn::PackedScene::-1::1737206287::0::1::::<><>::
 lvl2.tscn::PackedScene::-1::1737206287::0::1::::<><>::
-lvl_0.tscn::PackedScene::-1::1737205864::0::1::::<><>::
 Mainmenu.tscn::PackedScene::-1::1737205864::0::1::::<><>::
 ::res://Assets/::1737206287
 icon.svg::CompressedTexture2D::5747307070527502943::1736873672::1737199050::1::::<><>::
@@ -14,14 +13,14 @@ gauntlet enemy.glb::PackedScene::6749144848743883974::1736883613::1737199050::1:
 gauntlet enemy_dungeon_texture.png::CompressedTexture2D::899558772681173211::1736883613::1737199050::1::::<><>::
 uhhh botto attack this time.glb::PackedScene::6635560013688804730::1737205864::1737206064::1::::<><>::uid://dxggr0ysd2f6m::::res://Assets/Enemy/uhhh botto attack this time_dungeon_texture.png
 uhhh botto attack this time_dungeon_texture.png::CompressedTexture2D::8786387732713362950::1737205864::1737206064::1::::<><>::
-::res://Assets/levels/::1737206287
+::res://Assets/levels/::1737206379
 lvl0.glb::PackedScene::7980701133598539907::1736883613::1737199050::1::::<><>::uid://dnh7imp85mwo2::::res://Assets/levels/lvl0_dungeon_texture.png
 lvl0_dungeon_texture.png::CompressedTexture2D::8088125547764133231::1736883613::1737199050::1::::<><>::
 lvl1.glb::PackedScene::5897657183817604412::1737206287::1737206379::1::::<><>::uid://cjc51nisra5cr::::res://Assets/levels/lvl1_dungeon_texture.png
 lvl1_dungeon_texture.png::CompressedTexture2D::5410538352063711645::1737206287::1737206379::1::::<><>::
 lvl2.glb::PackedScene::7180738369372333705::1737206287::1737206379::1::::<><>::uid://brc2mutrdcrul::::res://Assets/levels/lvl2_dungeon_texture.png
 lvl2_dungeon_texture.png::CompressedTexture2D::3585421649974121367::1737206287::1737206379::1::::<><>::
-::res://Assets/Terrain with collision/::1737206287
+::res://Assets/Terrain with collision/::1737206380
 barrels.glb::PackedScene::3584626916280859909::1737206287::1737206380::1::::<><>::uid://b205d7417l82w::::res://Assets/Terrain with collision/barrels_dungeon_texture.png
 barrels_dungeon_texture.png::CompressedTexture2D::4334957499707266312::1737206287::1737206379::1::::<><>::
 corner wall.glb::PackedScene::2974291663525378124::1737206287::1737206380::1::::<><>::uid://bjfyldahx34pk::::res://Assets/Terrain with collision/corner wall_dungeon_texture.png
@@ -40,13 +39,13 @@ wall segment.glb::PackedScene::2519972812011364447::1737206287::1737206379::1:::
 wall segment_dungeon_texture.png::CompressedTexture2D::2308685669953411386::1737206287::1737206378::1::::<><>::
 ::res://Assets/textures/::1737199050
 256x256 Grid.png::CompressedTexture2D::3125688155701660630::1736873672::1737199050::1::::<><>::
-::res://Instance Scenes/::1737206165
+::res://Instance Scenes/::1737206385
 attack_hitbox.tscn::PackedScene::6534749506964784759::1737059404::0::1::::<><>::
 attack_hitbox_2.tscn::PackedScene::1880999185834537658::1737204764::0::1::::<><>::res://Scripts/AttackHitboxScript.cs
 dummy.tscn::PackedScene::6782961174717611298::1736873672::0::1::::<><>::uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn
-Enemy.tscn::PackedScene::4627544011651792625::1737206165::0::1::::<><>::res://Scripts/NavScript.cs<>uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>uid://broog141cslat::::res://Instance Scenes/NewerAnimationEnemy.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn
+Enemy.tscn::PackedScene::4627544011651792625::1737206385::0::1::::<><>::res://Scripts/NavScript.cs<>uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>uid://broog141cslat::::res://Instance Scenes/NewerAnimationEnemy.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn
 EnemyOsmanMESHFILE.tscn::PackedScene::4041246936244443015::1736873672::0::1::::<><>::uid://bcdv2ellaj2wa::::res://Assets/Lowpoly cowboy.glb
-EnemyRanged.tscn::PackedScene::1241104645911291431::1737206165::0::1::::<><>::res://Scripts/NavScript.cs<>uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>uid://broog141cslat::::res://Instance Scenes/NewerAnimationEnemy.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn
+EnemyRanged.tscn::PackedScene::1241104645911291431::1737206385::0::1::::<><>::res://Scripts/NavScript.cs<>uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>uid://broog141cslat::::res://Instance Scenes/NewerAnimationEnemy.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn
 healthbar.tscn::PackedScene::8637915731379965551::1736873672::0::1::::<><>::res://Scripts/Healthbar.cs
 NewerAnimationEnemy.tscn::PackedScene::3609394478349794031::1737059404::0::1::::<><>::uid://c3flouu4e8nuc::::res://Assets/Enemy/gauntlet enemy.glb<>uid://m20upnw1wlc2::::res://Assets/Enemy/gauntlet enemy_dungeon_texture.png
 TestCube.tscn::PackedScene::8541388896930186514::1737206165::0::1::::<><>::
@@ -64,10 +63,10 @@ Messenger.cs::CSharpScript::-1::1737203658::0::1::::<>Node<>::
 NavScript.cs::CSharpScript::-1::1737198971::0::1::::<>CharacterBody3D<>::
 PlayerScript.cs::CSharpScript::-1::1737205727::0::1::::<>CharacterBody3D<>::
 UiNumberScript.cs::CSharpScript::-1::1736873672::0::1::::<>Control<>::
-::res://Unique Scenes/::1737206165
+::res://Unique Scenes/::1737206385
 DeathScreen.tscn::PackedScene::8311274770792510493::1737206165::0::1::::<><>::res://Scripts/DeathScreen.cs
 FollowCam.tscn::PackedScene::2478559553035008294::1737206165::0::1::::<><>::res://Scripts/CameraScript.cs
-GodotTryinsmthn.tscn::PackedScene::2849313196763200652::1737206165::0::1::::<><>::uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>uid://rxg2u5ln1nwh::::res://Instance Scenes/EnemyRanged.tscn<>uid://dtxror4plrnag::::res://Instance Scenes/TestCube.tscn<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://c3vym50vcokec::::res://Instance Scenes/dummy.tscn
-lvl_0.tscn::PackedScene::7294652838694501694::1737206165::0::1::::<><>::uid://dlx58m21dkfk2::::res://Assets/levels/lvl0.glb<>res://Scripts/GameHandlerlv0.cs<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>uid://rxg2u5ln1nwh::::res://Instance Scenes/EnemyRanged.tscn
-player.tscn::PackedScene::6209450061745544640::1737206165::0::1::::<><>::res://Scripts/PlayerScript.cs<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn<>uid://ct6hmu1m4gdrr::::res://Unique Scenes/UiNumber.tscn
+GodotTryinsmthn.tscn::PackedScene::2849313196763200652::1737206385::0::1::::<><>::uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>uid://rxg2u5ln1nwh::::res://Instance Scenes/EnemyRanged.tscn<>uid://dtxror4plrnag::::res://Instance Scenes/TestCube.tscn<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://c3vym50vcokec::::res://Instance Scenes/dummy.tscn
+lvl_0.tscn::PackedScene::7294652838694501694::1737206385::0::1::::<><>::uid://dlx58m21dkfk2::::res://Assets/levels/lvl0.glb<>res://Scripts/GameHandlerlv0.cs<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>uid://rxg2u5ln1nwh::::res://Instance Scenes/EnemyRanged.tscn
+player.tscn::PackedScene::6209450061745544640::1737206385::0::1::::<><>::res://Scripts/PlayerScript.cs<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn<>uid://ct6hmu1m4gdrr::::res://Unique Scenes/UiNumber.tscn
 UiNumber.tscn::PackedScene::6170872646577030879::1736873672::0::1::::<><>::res://Scripts/UiNumberScript.cs
