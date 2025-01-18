@@ -78,3 +78,11 @@ scale = Vector2(2.5, 2.5)
 size_flags_vertical = 4
 timerID = 2
 metadata/_edit_use_anchors_ = true
+
+[node name="Timer3" parent="." instance=ExtResource("5_cfqu6")]
+offset_left = 200.0
+offset_right = 200.0
+scale = Vector2(2.5, 2.5)
+size_flags_vertical = 4
+timerID = 3
+metadata/_edit_use_anchors_ = true

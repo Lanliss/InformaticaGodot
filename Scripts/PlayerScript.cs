@@ -9,6 +9,7 @@ public partial class PlayerScript : CharacterBody3D
 	[Export] private RigidBody3D _lookObject;
 	[Export] private float speed = 5f;
 	[Export] private float dashDistance = 2.5f;
+	[Export] private float dashCooldownTime = 0.5f;
 
 	[ExportCategory("Attack Settings")]
     [Export] private float attackRange = 1f;
@@ -39,6 +40,7 @@ public partial class PlayerScript : CharacterBody3D
 	private Messenger _messengerSingleton; //Messenger singleton
 	private float attack1Cooldown = 0f;
 	private float attack2Cooldown = 0f;
+	private float dashCooldown = 0f;
 	
 	public override void _Ready()
 	{
@@ -116,12 +118,14 @@ public partial class PlayerScript : CharacterBody3D
 			}
 
 			// Handle Dash.
-			if (Input.IsActionJustPressed("dash") && IsOnFloor())
+			if (Input.IsActionJustPressed("dash") && dashCooldown == 0f)
 			{
 				if (moveDirection != Vector3.Zero)
 				{
-					GlobalPosition += new Vector3(moveDirection.X * dashDistance, 0, moveDirection.Z * dashDistance);
-				}
+					GlobalPosition += new Vector3(moveDirection.X, 0, moveDirection.Z).Normalized() * dashDistance;
+					dashCooldown = dashCooldownTime;
+                    _messengerSingleton.EmitSignal(nameof(_messengerSingleton.OnStartCooldown), 3, dashCooldownTime);
+                }
 			}
 		}
 		else
@@ -151,6 +155,8 @@ public partial class PlayerScript : CharacterBody3D
 			}
 		}
 
+
+		//cooldown section
         if (attack1Cooldown > 0)
         {
             if (attack1Cooldown - (float)delta >= 0) { attack1Cooldown -= (float)delta; } else { attack1Cooldown = 0; }
@@ -158,6 +164,10 @@ public partial class PlayerScript : CharacterBody3D
         if (attack2Cooldown > 0)
         {
             if (attack2Cooldown - (float)delta >= 0) { attack2Cooldown -= (float)delta; } else { attack2Cooldown = 0; }
+        }
+        if (dashCooldown > 0)
+        {
+            if (dashCooldown - (float)delta >= 0) { dashCooldown -= (float)delta; } else { dashCooldown = 0; }
         }
         velocity = velocity.Rotated(Vector3.Up, 0.25f * MathF.PI);
         Velocity = velocity;

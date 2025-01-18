@@ -37,6 +37,6 @@ public partial class Healthbar : Node3D
 			}
             EmitSignal(SignalName.updateHealthToNav, progressBar.Value);
         }
-		else { Debug.WriteLine("Area does not have the correct metadata"); }
+		else { GD.Print("Area does not have the correct metadata"); }
 	}
 }

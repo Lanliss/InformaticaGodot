@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Piete\\source\\repos\\NewRepo\\New Game Project.csproj": {}
+    "C:\\Users\\Piete\\source\\repos\\InformaticaGodotGame\\New Game Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Piete\\source\\repos\\NewRepo\\New Game Project.csproj": {
+    "C:\\Users\\Piete\\source\\repos\\InformaticaGodotGame\\New Game Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Piete\\source\\repos\\NewRepo\\New Game Project.csproj",
+        "projectUniqueName": "C:\\Users\\Piete\\source\\repos\\InformaticaGodotGame\\New Game Project.csproj",
         "projectName": "New Game Project",
-        "projectPath": "C:\\Users\\Piete\\source\\repos\\NewRepo\\New Game Project.csproj",
+        "projectPath": "C:\\Users\\Piete\\source\\repos\\InformaticaGodotGame\\New Game Project.csproj",
         "packagesPath": "C:\\Users\\Piete\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Piete\\source\\repos\\NewRepo\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "C:\\Users\\Piete\\source\\repos\\InformaticaGodotGame\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Piete\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -79,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

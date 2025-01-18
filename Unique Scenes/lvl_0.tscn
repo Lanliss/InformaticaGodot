@@ -1,10 +1,11 @@
-[gd_scene load_steps=19 format=3 uid="uid://db6t4pwtmgmfu"]
+[gd_scene load_steps=20 format=3 uid="uid://db6t4pwtmgmfu"]
 
 [ext_resource type="PackedScene" uid="uid://dlx58m21dkfk2" path="res://Assets/levels/lvl0.glb" id="1_pqlfv"]
 [ext_resource type="Script" path="res://Scripts/GameHandlerlv0.cs" id="2_luk3h"]
 [ext_resource type="PackedScene" uid="uid://b66u8dxojywcf" path="res://Instance Scenes/Enemy.tscn" id="2_qp0q7"]
 [ext_resource type="PackedScene" uid="uid://cup50aaop1qpc" path="res://Unique Scenes/player.tscn" id="3_svj7e"]
 [ext_resource type="PackedScene" uid="uid://bbkvrp4dyvmi5" path="res://Unique Scenes/FollowCam.tscn" id="4_x4acg"]
+[ext_resource type="PackedScene" uid="uid://rxg2u5ln1nwh" path="res://Instance Scenes/EnemyRanged.tscn" id="5_1a6ke"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_0ft0q"]
 vertices = PackedVector3Array(-7.3275, 0.999999, -23.97, -5.5775, 0.999999, -24.22, -5.8275, 0.999999, -25.22, -16.0775, 0.999999, -25.22, -16.0775, 0.999999, -12.72, -7.3275, 0.999999, -12.72, 5.6725, 0.999999, -24.22, 5.9225, 0.999999, -19.47, 15.9225, 0.999999, -19.47, 15.9225, 0.999999, -25.22, -15.5775, 4.75, -11.72, -15.3275, 5, -2.46999, -15.0775, 4.75, -11.47, 4.6725, 4.75, -17.97, 16.6725, 4.75, -18.22, 5.1725, 4.75, -18.47, 4.4225, 4.75, -22.97, 4.9225, 4.75, -23.22, -5.8275, 5, -22.97, -6.3275, 5, -23.22, -6.3275, 5, -11.97, -6.0775, 5, -11.47, 5.4225, 0.999999, -14.72, 6.4225, 0.999999, -14.97, 6.4225, 0.999999, -17.22, 3.6725, 0.999999, -17.22, -1.8275, 0.999999, -13.22, 2.1725, 0.999999, -13.22, 2.4225, 0.999999, -12.72, 5.4225, 0.999999, -12.97, -5.0775, 0.999999, -11.97, -2.0775, 0.999999, -11.97, -5.0775, 0.999999, -21.97, 3.6725, 0.999999, -21.97, 8.1725, 0.999999, -14.72, 15.9225, 0.999999, -17.22, 12.6725, 0.999999, -7.96999, 12.9225, 0.999999, -5.71999, 15.9225, 0.999999, -5.71999, 8.1725, 0.999999, -12.47, 7.6725, 0.999999, -12.22, 8.6725, 0.999999, -7.96999, 6.4225, 5.5, -13.97, 6.4225, 5.5, -13.22, 7.1725, 5.5, -13.22, 7.1725, 5.5, -13.97, 5.6725, 0.999999, -12.22, 8.1725, 0.999999, -7.71999, 2.4225, 0.999999, -5.96999, 8.1725, 0.999999, -5.46999, 1.9225, 0.999999, -5.71999, -1.0775, 4.75, -12.22, -1.0775, 4.75, -6.71999, 1.4225, 4.75, -6.71999, 1.4225, 4.75, -12.22, -5.3275, 0.999999, -10.47, -14.3275, 0.999999, -5.96999, -10.3275, 0.999999, -5.96999, -10.0775, 0.999999, -8.46999, -14.3275, 0.999999, -10.47, -7.3275, 0.999999, -8.46999, -7.0775, 0.999999, -6.21999, -2.0775, 0.999999, -6.21999, -0.827499, 0.999999, -11.97, -0.827499, 0.999999, -6.96999, 1.1725, 0.999999, -6.96999, 1.1725, 0.999999, -11.97, -9.3275, 5.75, -7.46999, -9.3275, 5.75, -6.46999, -8.0775, 5.75, -6.46999, -8.0775, 5.75, -7.46999, -9.0775, 0.999999, -7.21999, -9.0775, 0.999999, -6.71999, -8.3275, 0.999999, -6.71999, -8.3275, 0.999999, -7.21999, 9.1725, 3.5, -6.96999, 9.1725, 3.5, -4.46999, 11.9225, 3.5, -4.46999, 11.9225, 3.5, -6.96999, 9.4225, 0.999999, -6.71999, 9.4225, 0.999999, -4.71999, 11.6725, 0.999999, -4.71999, 11.6725, 0.999999, -6.71999, -1.8275, 0.999999, -5.71999, -7.3275, 0.999999, -5.46999, -8.8275, 0.999999, -5.46999, -8.5775, 0.999999, 3.28001, 0.172501, 0.999999, -5.71999, 0.172501, 0.999999, 3.28001, -10.0775, 0.999999, -5.46999, -14.3275, 0.999999, -1.71999, -16.0775, 0.999999, -1.46999, -16.0775, 0.999999, 3.28001, 8.1725, 0.999999, -3.71999, 9.6725, 0.999999, 3.28001, 9.9225, 0.999999, -3.46999, 12.6725, 0.999999, -3.46999, 15.9225, 0.999999, 3.28001)
@@ -127,21 +128,20 @@ shape = SubResource("BoxShape3D_bvg3w")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0774999, 0, -11)
 shape = SubResource("BoxShape3D_6r7yy")
 
-[node name="Enemy" parent="." index="26" instance=ExtResource("2_qp0q7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.8003, 1.34398, -4.36703)
-
-[node name="Enemy2" parent="." index="27" instance=ExtResource("2_qp0q7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7871, 1.92811, -8.59727)
-
-[node name="Enemy3" parent="." index="28" instance=ExtResource("2_qp0q7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5673, 1.38822, -14.4137)
-isRanged = true
-
-[node name="PlayerBody3D" parent="." index="29" instance=ExtResource("3_svj7e")]
+[node name="PlayerBody3D" parent="." index="26" instance=ExtResource("3_svj7e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2.5, -2)
 
-[node name="Camera3D" parent="." index="30" node_paths=PackedStringArray("_player") instance=ExtResource("4_x4acg")]
+[node name="Camera3D" parent="." index="27" node_paths=PackedStringArray("_player") instance=ExtResource("4_x4acg")]
 transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 12, 8, 2)
 _player = NodePath("../PlayerBody3D")
+
+[node name="Enemy" parent="." index="28" instance=ExtResource("5_1a6ke")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.038, 1.5, -3.86096)
+
+[node name="Enemy3" parent="." index="29" instance=ExtResource("5_1a6ke")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.95297, 1.5, -19.5851)
+
+[node name="Enemy2" parent="." index="30" instance=ExtResource("2_qp0q7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.589, 1.5, -11.244)
 
 [connection signal="MousePosFound" from="Camera3D" to="PlayerBody3D" method="OnMousePosition"]

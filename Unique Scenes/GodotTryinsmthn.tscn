@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://bguh1ircw2ijc"]
+[gd_scene load_steps=11 format=3 uid="uid://bguh1ircw2ijc"]
 
 [ext_resource type="PackedScene" uid="uid://bbkvrp4dyvmi5" path="res://Unique Scenes/FollowCam.tscn" id="1_h5eh2"]
+[ext_resource type="PackedScene" uid="uid://rxg2u5ln1nwh" path="res://Instance Scenes/EnemyRanged.tscn" id="2_e5fet"]
 [ext_resource type="PackedScene" uid="uid://dtxror4plrnag" path="res://Instance Scenes/TestCube.tscn" id="2_pohwy"]
 [ext_resource type="PackedScene" uid="uid://b66u8dxojywcf" path="res://Instance Scenes/Enemy.tscn" id="2_q62s7"]
 [ext_resource type="PackedScene" uid="uid://cup50aaop1qpc" path="res://Unique Scenes/player.tscn" id="3_cgqft"]
@@ -31,17 +32,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.82913, 1.5, -7.87321)
 rotationSpeed = 2.5
 pathfindingUpdateTime = 0.1
 
-[node name="Enemy3" parent="." instance=ExtResource("2_q62s7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.10862, 1.5, -5.7684)
-rotationSpeed = 2.5
-isRanged = true
-pathfindingUpdateTime = 0.1
+[node name="Enemy3" parent="." instance=ExtResource("2_e5fet")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.91, 1.5, -9.18)
 
-[node name="Enemy4" parent="." instance=ExtResource("2_q62s7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.20849, 1.5, -8.35664)
-rotationSpeed = 2.5
-isRanged = true
-pathfindingUpdateTime = 0.1
+[node name="Enemy4" parent="." instance=ExtResource("2_e5fet")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.8205, 1.5, -8.42515)
 
 [node name="Floor" type="StaticBody3D" parent="."]
 

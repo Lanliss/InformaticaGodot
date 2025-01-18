@@ -1,10 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://b66u8dxojywcf"]
+[gd_scene load_steps=9 format=3 uid="uid://rxg2u5ln1nwh"]
 
-[ext_resource type="Script" path="res://Scripts/NavScript.cs" id="1_7g6jv"]
-[ext_resource type="PackedScene" uid="uid://dvcjhe4agwqod" path="res://Instance Scenes/healthbar.tscn" id="1_muime"]
-[ext_resource type="PackedScene" uid="uid://c0dqmtkmnerjr" path="res://Instance Scenes/attack_hitbox.tscn" id="4_jtcc1"]
-[ext_resource type="PackedScene" uid="uid://broog141cslat" path="res://Instance Scenes/NewerAnimationEnemy.tscn" id="4_nsidj"]
-[ext_resource type="PackedScene" uid="uid://12f1ty21gw23" path="res://Instance Scenes/attack_hitbox_2.tscn" id="5_w8yaj"]
+[ext_resource type="Script" path="res://Scripts/NavScript.cs" id="1_olyk7"]
+[ext_resource type="PackedScene" uid="uid://dvcjhe4agwqod" path="res://Instance Scenes/healthbar.tscn" id="2_mf2st"]
+[ext_resource type="PackedScene" uid="uid://c0dqmtkmnerjr" path="res://Instance Scenes/attack_hitbox.tscn" id="3_ata65"]
+[ext_resource type="PackedScene" uid="uid://broog141cslat" path="res://Instance Scenes/NewerAnimationEnemy.tscn" id="4_e8pju"]
+[ext_resource type="PackedScene" uid="uid://12f1ty21gw23" path="res://Instance Scenes/attack_hitbox_2.tscn" id="5_q6pb7"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ouiib"]
 
@@ -15,10 +15,11 @@ height = 1.5
 radius = 6.0
 
 [node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("_navigationAgent", "playerDetectionShape3D", "visualEnemy", "attackHitbox1", "attackHitbox2")]
-script = ExtResource("1_7g6jv")
+script = ExtResource("1_olyk7")
 _navigationAgent = NodePath("NavigationAgent3D")
 playerDetectionShape3D = NodePath("DetectionArea3D/CollisionShape3D")
 visualEnemy = NodePath("gauntlet enemy")
+isRanged = true
 attackHitbox1 = NodePath("AttackHitbox")
 attackHitbox2 = NodePath("AttackHitbox2")
 pathDistance = 0.1
@@ -29,9 +30,10 @@ pathfindingUpdateTime = 0.2
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_ouiib")
 
-[node name="Healthbar" parent="." node_paths=PackedStringArray("parentCollisionArea") instance=ExtResource("1_muime")]
+[node name="Healthbar" parent="." node_paths=PackedStringArray("parentCollisionArea") instance=ExtResource("2_mf2st")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0)
 parentCollisionArea = NodePath("../Area3D")
+maxHealth = 10
 
 [node name="Area3D" type="Area3D" parent="."]
 collision_layer = 4
@@ -58,14 +60,14 @@ debug_enabled = true
 debug_use_custom = true
 debug_path_custom_color = Color(0.50171, 0.571719, 0.889622, 1)
 
-[node name="AttackHitbox" parent="." instance=ExtResource("4_jtcc1")]
+[node name="AttackHitbox" parent="." instance=ExtResource("3_ata65")]
 collision_layer = 16
 collision_mask = 2
 metadata/dmg = 10
 
-[node name="gauntlet enemy" parent="." instance=ExtResource("4_nsidj")]
+[node name="gauntlet enemy" parent="." instance=ExtResource("4_e8pju")]
 
-[node name="AttackHitbox2" parent="." instance=ExtResource("5_w8yaj")]
+[node name="AttackHitbox2" parent="." instance=ExtResource("5_q6pb7")]
 collision_layer = 16
 collision_mask = 3
 
