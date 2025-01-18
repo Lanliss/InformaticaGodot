@@ -1,18 +1,41 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737097501
+::res://::1737203634
 lvl0.tscn::PackedScene::6546431787902665069::1736883516::0::1::::<><>::uid://dlx58m21dkfk2::::res://Assets/levels/lvl0.glb
+lvl1.tscn::PackedScene::1723294172045115361::1737203634::0::1::::<><>::uid://cqa4s1kb6jen1::::res://Assets/levels/lvl1.glb
+lvl2.tscn::PackedScene::1357350155737127878::1737203067::0::1::::<><>::uid://cottgllf154qw::::res://Assets/levels/lvl2.glb
 lvl_0.tscn::PackedScene::3876262422966130897::1737065116::0::1::::<><>::uid://dlx58m21dkfk2::::res://Assets/levels/lvl0.glb
 Mainmenu.tscn::PackedScene::6566857962438653310::1737065156::0::1::::<><>::res://menu stuff/Bold-Colorful-Modern-Elegant-YouTube-Intro-Video-_1_.ogv
 node_3d.tscn::PackedScene::5523598074086501563::1735057451::0::1::::<><>::uid://bcdv2ellaj2wa::::res://Assets/Lowpoly cowboy.glb
-::res://Assets/::1737059723
+::res://Assets/::1737203665
 ::res://Assets/Enemy/::1737061271
 gauntlet enemy.glb::PackedScene::6749144848743883974::1736880095::1736880096::1::::<><>::uid://m20upnw1wlc2::::res://Assets/Enemy/gauntlet enemy_dungeon_texture.png
 gauntlet enemy_dungeon_texture.png::CompressedTexture2D::899558772681173211::1736880096::1736880096::1::::<><>::
 uhhh botto attack this time.glb::PackedScene::6635560013688804730::1737059564::1737059724::1::::<><>::uid://dxggr0ysd2f6m::::res://Assets/Enemy/uhhh botto attack this time_dungeon_texture.png
 uhhh botto attack this time_dungeon_texture.png::CompressedTexture2D::8786387732713362950::1737059564::1737059723::1::::<><>::
-::res://Assets/levels/::1736880105
+::res://Assets/levels/::1737203605
 lvl0.glb::PackedScene::7980701133598539907::1735305013::1736880105::1::::<><>::uid://dnh7imp85mwo2::::res://Assets/levels/lvl0_dungeon_texture.png
 lvl0_dungeon_texture.png::CompressedTexture2D::8088125547764133231::1735305013::1736880105::1::::<><>::
+lvl1.glb::PackedScene::5897657183817604412::1737203567::1737203601::1::::<><>::uid://cjc51nisra5cr::::res://Assets/levels/lvl1_dungeon_texture.png
+lvl1_dungeon_texture.png::CompressedTexture2D::5410538352063711645::1737203567::1737203600::1::::<><>::
+lvl2.glb::PackedScene::7180738369372333705::1737203510::1737203605::1::::<><>::uid://brc2mutrdcrul::::res://Assets/levels/lvl2_dungeon_texture.png
+lvl2_dungeon_texture.png::CompressedTexture2D::3585421649974121367::1737203510::1737203605::1::::<><>::
+::res://Assets/Terrain with collision/::1737203688
+barrels.glb::PackedScene::3584626916280859909::1737203686::1737203687::1::::<><>::uid://b205d7417l82w::::res://Assets/Terrain with collision/barrels_dungeon_texture.png
+corner wall.glb::PackedScene::2974291663525378124::1737203686::1737203687::1::::<><>::uid://bjfyldahx34pk::::res://Assets/Terrain with collision/corner wall_dungeon_texture.png
+pillar w shield.glb::PackedScene::8293129436086196506::1737203686::1737203687::1::::<><>::uid://b7ql4ie2i1eq4::::res://Assets/Terrain with collision/pillar w shield_dungeon_texture.png
+pillar with shield.glb::PackedScene::7004238484308229::1737203686::1737203687::1::::<><>::uid://dot4l45xgn4fg::::res://Assets/Terrain with collision/pillar with shield_dungeon_texture.png
+pillar.glb::PackedScene::8517676952333944830::1737203686::1737203687::1::::<><>::uid://cwhnf680gr5aw::::res://Assets/Terrain with collision/pillar_dungeon_texture.png
+barrels_dungeon_texture.png::CompressedTexture2D::4334957499707266312::1737203687::1737203688::1::::<><>::
+corner wall_dungeon_texture.png::CompressedTexture2D::3029919174685009068::1737203687::1737203688::1::::<><>::
+pillar w shield_dungeon_texture.png::CompressedTexture2D::4666213826723259901::1737203687::1737203688::1::::<><>::
+pillar with shield_dungeon_texture.png::CompressedTexture2D::8182911046436937676::1737203687::1737203688::1::::<><>::
+pillar_dungeon_texture.png::CompressedTexture2D::6332246501923828182::1737203687::1737203688::1::::<><>::
+wall segment_dungeon_texture.png::CompressedTexture2D::2308685669953411386::1737203688::1737203688::1::::<><>::
+table2_dungeon_texture.png::CompressedTexture2D::7974147309559380936::1737203687::1737203688::1::::<><>::
+table1_dungeon_texture.png::CompressedTexture2D::8657083853432429603::1737203687::1737203688::1::::<><>::
+table1.glb::PackedScene::3101350521766446362::1737203686::1737203687::1::::<><>::uid://dvls52vi3phpr::::res://Assets/Terrain with collision/table1_dungeon_texture.png
+table2.glb::PackedScene::7379604523881685946::1737203686::1737203688::1::::<><>::uid://dlu0bntnqo2lw::::res://Assets/Terrain with collision/table2_dungeon_texture.png
+wall segment.glb::PackedScene::2519972812011364447::1737203686::1737203688::1::::<><>::uid://75lyllegy08u::::res://Assets/Terrain with collision/wall segment_dungeon_texture.png
 ::res://Instance Scenes/::1737065116
 attack_hitbox.tscn::PackedScene::6534749506964784759::1737065116::0::1::::<><>::
 attack_hitbox_2.tscn::PackedScene::1880999185834537658::1737065116::0::1::::<><>::
