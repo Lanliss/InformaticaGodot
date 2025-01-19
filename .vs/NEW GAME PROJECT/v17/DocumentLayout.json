@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Osman\\source\\repos\\Da gaem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\osman\\source\\repos\\da gaem\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\osman\\source\\repos\\da gaem\\scripts\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,6 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Healthbar.cs",
+              "DocumentMoniker": "C:\\Users\\Osman\\source\\repos\\Da gaem\\Scripts\\Healthbar.cs",
+              "RelativeDocumentMoniker": "Scripts\\Healthbar.cs",
+              "ToolTip": "C:\\Users\\Osman\\source\\repos\\Da gaem\\Scripts\\Healthbar.cs",
+              "RelativeToolTip": "Scripts\\Healthbar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T12:35:52.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PlayerScript.cs",
               "DocumentMoniker": "C:\\Users\\Osman\\source\\repos\\Da gaem\\Scripts\\PlayerScript.cs",
               "RelativeDocumentMoniker": "Scripts\\PlayerScript.cs",
@@ -35,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "NavScript.cs",
               "DocumentMoniker": "C:\\Users\\Osman\\source\\repos\\Da gaem\\Scripts\\NavScript.cs",
               "RelativeDocumentMoniker": "Scripts\\NavScript.cs",
