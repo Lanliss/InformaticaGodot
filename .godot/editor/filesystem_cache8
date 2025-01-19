@@ -1,13 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737320050
+::res://::1737323667
 lvl0.tscn::PackedScene::6546431787902665069::1736883516::0::1::::<><>::uid://dlx58m21dkfk2::::res://Assets/levels/lvl0.glb
 lvl1.tscn::PackedScene::1723294172045115361::1737203728::0::1::::<><>::uid://cqa4s1kb6jen1::::res://Assets/levels/lvl1.glb
 lvl2.tscn::PackedScene::1357350155737127878::1737203067::0::1::::<><>::uid://cottgllf154qw::::res://Assets/levels/lvl2.glb
 lvl_0.tscn::PackedScene::3876262422966130897::1737065116::0::1::::<><>::uid://dlx58m21dkfk2::::res://Assets/levels/lvl0.glb
 Mainmenu.tscn::PackedScene::6566857962438653310::1737065156::0::1::::<><>::res://menu stuff/Bold-Colorful-Modern-Elegant-YouTube-Intro-Video-_1_.ogv
 node_3d.tscn::PackedScene::5523598074086501563::1735057451::0::1::::<><>::uid://bcdv2ellaj2wa::::res://Assets/Lowpoly cowboy.glb
-::res://Assets/::1737320050
-::res://Assets/cowboy/::1737320050
+::res://Assets/::1737323602
+enemy projectile.glb::PackedScene::6967980985017632239::1737323594::1737323602::1::::<><>::
+guy projectile.glb::PackedScene::7919907893487499270::1737323594::1737323602::1::::<><>::uid://dkgy4nv745rcq::::res://Assets/guy projectile_dungeon_texture.png
+guy projectile_dungeon_texture.png::CompressedTexture2D::7875046466571953560::1737323594::1737323602::1::::<><>::
+sl;ash vfx.glb::PackedScene::3502896060811306383::1737323470::1737323485::1::::<><>::
+::res://Assets/cowboy/::1737323328
 Lowpoly cowboy.glb::PackedScene::4141290007406122610::1737320041::1737320052::1::::<><>::uid://60ryt7c6rjo2::::res://Assets/cowboy/Lowpoly cowboy_dungeon_texture.png
 Lowpoly cowboy_dungeon_texture.png::CompressedTexture2D::2228539692071616083::1737320042::1737320051::1::::<><>::
 ::res://Assets/Enemy/::1737301245
@@ -59,8 +63,8 @@ PlayerScript.cs::CSharpScript::-1::1734865348::0::1::::<>CharacterBody3D<>::
 UiNumberScript.cs::CSharpScript::-1::1734865348::0::1::::<>Control<>::
 ::res://textures/::1737062238
 256x256 Grid.png::CompressedTexture2D::1278727258630554426::1734865348::1734865402::1::::<><>::
-::res://Unique Scenes/::1737318387
+::res://Unique Scenes/::1737323649
 FollowCam.tscn::PackedScene::2478559553035008294::1734865348::0::1::::<><>::res://Scripts/CameraScript.cs
 GodotTryinsmthn.tscn::PackedScene::2849313196763200652::1737065115::0::1::::<><>::uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>uid://dtxror4plrnag::::res://Instance Scenes/TestCube.tscn<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://c3vym50vcokec::::res://Instance Scenes/dummy.tscn<>uid://ct6hmu1m4gdrr::::res://Unique Scenes/UiNumber.tscn
-player.tscn::PackedScene::6209450061745544640::1737318387::0::1::::<><>::res://Scripts/PlayerScript.cs<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn
+player.tscn::PackedScene::6209450061745544640::1737323649::0::1::::<><>::res://Scripts/PlayerScript.cs<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn
 UiNumber.tscn::PackedScene::6170872646577030879::1737065116::0::1::::<><>::res://Scripts/UiNumberScript.cs
