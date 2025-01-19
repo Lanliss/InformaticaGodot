@@ -1,8 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737232524
+::res://::1737317873
 ::res://Assets/::1737226712
 icon.svg::CompressedTexture2D::5747307070527502943::1737226597::1737226712::1::::<><>::
-Lowpoly cowboy.blend::PackedScene::5133422091147269667::1735312642::1735313351::1::::<><>::uid://bksdvldwkqsk1::::res://Assets/textures/256x256 Grid.png
 Lowpoly cowboy.glb::PackedScene::8234995575857558342::1736181610::1736181725::1::::<><>::
 Lowpoly cowboy_256x256 Grid.png::CompressedTexture2D::4604447305401278823::1735312642::1735313348::1::::<><>::
 Lowpoly cowboy_Untitled.png::CompressedTexture2D::44403896231473799::1735312642::1735313348::1::::<><>::
@@ -18,9 +17,9 @@ lvl1.glb::PackedScene::5897657183817604412::1737226597::1737226714::1::::<><>::u
 lvl1_dungeon_texture.png::CompressedTexture2D::5410538352063711645::1737226597::1737226712::1::::<><>::
 lvl2.glb::PackedScene::7180738369372333705::1737226597::1737226713::1::::<><>::uid://brc2mutrdcrul::::res://Assets/levels/lvl2_dungeon_texture.png
 lvl2_dungeon_texture.png::CompressedTexture2D::3585421649974121367::1737226597::1737226712::1::::<><>::
-::res://Assets/Terrain with collision/::1737226714
-barrels.glb::PackedScene::3584626916280859909::1737226597::1737226712::1::::<><>::uid://b205d7417l82w::::res://Assets/Terrain with collision/barrels_dungeon_texture.png
-barrels_dungeon_texture.png::CompressedTexture2D::4334957499707266312::1737226597::1737226712::1::::<><>::
+::res://Assets/Terrain with collision/::1737237442
+barrels.glb::PackedScene::3584626916280859909::1737226597::1737317875::1::::<><>::uid://b205d7417l82w::::res://Assets/Terrain with collision/barrels_dungeon_texture.png
+barrels_dungeon_texture.png::CompressedTexture2D::4334957499707266312::1737226597::1737317875::1::::<><>::
 corner wall.glb::PackedScene::2974291663525378124::1737226597::1737226713::1::::<><>::uid://bjfyldahx34pk::::res://Assets/Terrain with collision/corner wall_dungeon_texture.png
 corner wall_dungeon_texture.png::CompressedTexture2D::3029919174685009068::1737226597::1737226712::1::::<><>::
 pillar w shield.glb::PackedScene::8293129436086196506::1737226597::1737226714::1::::<><>::uid://b7ql4ie2i1eq4::::res://Assets/Terrain with collision/pillar w shield_dungeon_texture.png
@@ -31,23 +30,27 @@ pillar.glb::PackedScene::8517676952333944830::1737226597::1737226713::1::::<><>:
 pillar_dungeon_texture.png::CompressedTexture2D::6332246501923828182::1737226597::1737226712::1::::<><>::
 table1.glb::PackedScene::3101350521766446362::1737226597::1737226713::1::::<><>::uid://dvls52vi3phpr::::res://Assets/Terrain with collision/table1_dungeon_texture.png
 table1_dungeon_texture.png::CompressedTexture2D::8657083853432429603::1737226597::1737226712::1::::<><>::
-table2.glb::PackedScene::7379604523881685946::1737226597::1737226712::1::::<><>::uid://dlu0bntnqo2lw::::res://Assets/Terrain with collision/table2_dungeon_texture.png
-table2_dungeon_texture.png::CompressedTexture2D::7974147309559380936::1737226597::1737226712::1::::<><>::
+table2.glb::PackedScene::7379604523881685946::1737226597::1737317875::1::::<><>::uid://dlu0bntnqo2lw::::res://Assets/Terrain with collision/table2_dungeon_texture.png
+table2_dungeon_texture.png::CompressedTexture2D::7974147309559380936::1737226597::1737317875::1::::<><>::
 wall segment.glb::PackedScene::2519972812011364447::1737226597::1737226712::1::::<><>::uid://75lyllegy08u::::res://Assets/Terrain with collision/wall segment_dungeon_texture.png
 wall segment_dungeon_texture.png::CompressedTexture2D::2308685669953411386::1737226597::1737226712::1::::<><>::
 ::res://Assets/textures/::1735313349
 256x256 Grid.png::CompressedTexture2D::3125688155701660630::1735312642::1735313348::1::::<><>::
-::res://Instance Scenes/::1737233917
+::res://Instance Scenes/::1737238631
 attack_hitbox.tscn::PackedScene::6534749506964784759::1737226597::0::1::::<><>::
 attack_hitbox_2.tscn::PackedScene::1880999185834537658::1737226597::0::1::::<><>::
+BarrelsReal.tscn::PackedScene::6108220113108384887::1737237182::0::1::::<><>::uid://b205d7417l82w::::res://Assets/Terrain with collision/barrels_dungeon_texture.png
 dummy.tscn::PackedScene::6782961174717611298::1737230890::0::1::::<><>::uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn
-Enemy.tscn::PackedScene::4627544011651792625::1737233917::0::1::::<><>::res://Scripts/NavScript.cs<>uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>res://Instance Scenes/NewerAnimationEnemy.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn
+Enemy.tscn::PackedScene::4627544011651792625::1737238631::0::1::::<><>::res://Scripts/NavScript.cs<>uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>res://Instance Scenes/NewerAnimationEnemy.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn
 EnemyRanged.tscn::PackedScene::-1::1737226597::0::1::::<><>::
 healthbar.tscn::PackedScene::8637915731379965551::1735063246::0::1::::<><>::res://Scripts/Healthbar.cs
 NewerAnimationEnemy.tscn::PackedScene::-1::1737226597::0::1::::<><>::
+no_go_wall.tscn::PackedScene::7297961584338701732::1737233246::0::1::::<><>::
+no_go_zone.tscn::PackedScene::3837970309372190637::1737233241::0::1::::<><>::
 pillar.tscn::PackedScene::-1::1737226597::0::1::::<><>::
 pillar_decorated.tscn::PackedScene::-1::1737226597::0::1::::<><>::
-no_go_zone.tscn::PackedScene::3837970309372190637::1737233241::0::1::::<><>::
+table2.tscn::PackedScene::589689088348175008::1737237482::0::1::::<><>::uid://dlu0bntnqo2lw::::res://Assets/Terrain with collision/table2_dungeon_texture.png
+table_1.tscn::PackedScene::6242747487559529141::1737237385::0::1::::<><>::uid://dvls52vi3phpr::::res://Assets/Terrain with collision/table1_dungeon_texture.png
 TestCube.tscn::PackedScene::8541388896930186514::1734812607::0::1::::<><>::
 wall.tscn::PackedScene::-1::1737226597::0::1::::<><>::
 wall_corner.tscn::PackedScene::-1::1737226597::0::1::::<><>::
@@ -55,7 +58,7 @@ wall_corner.tscn::PackedScene::-1::1737226597::0::1::::<><>::
 Bold-Colorful-Modern-Elegant-YouTube-Intro-Video-_1_.ogv::VideoStreamTheora::-1::1737226597::0::1::::<><>::
 earth.ogv::VideoStreamTheora::-1::1737226598::0::1::::<><>::
 REsume.png::CompressedTexture2D::2862414382593839795::1737226597::1737226712::1::::<><>::
-::res://Scripts/::1737233480
+::res://Scripts/::1737238759
 AttackHitboxScript.cs::CSharpScript::-1::1737226597::0::1::::<>Area3D<>::
 CameraScript.cs::CSharpScript::-1::1737226597::0::1::::<>Camera3D<>::
 DeathScreen.cs::CSharpScript::-1::1737226597::0::1::::<>Control<>::
@@ -63,17 +66,16 @@ GameHandlerlv0.cs::CSharpScript::-1::1737226597::0::1::::<>Node3D<>::
 Healthbar.cs::CSharpScript::-1::1737226597::0::1::::<>Node3D<>::
 Mainmenu.cs::CSharpScript::-1::1737230873::0::1::::<>Control<>::
 Messenger.cs::CSharpScript::-1::1737226597::0::1::::<>Node<>::
-NavScript.cs::CSharpScript::-1::1737226597::0::1::::<>CharacterBody3D<>::
+NavScript.cs::CSharpScript::-1::1737238759::0::1::::<>CharacterBody3D<>::
 PlayerScript.cs::CSharpScript::-1::1737233480::0::1::::<>CharacterBody3D<>::
 UiNumberScript.cs::CSharpScript::-1::1734821116::0::1::::<>Control<>::
-::res://Unique Scenes/::1737233918
+::res://Unique Scenes/::1737238631
 DeathScreen.tscn::PackedScene::-1::1737226597::0::1::::<><>::
 FollowCam.tscn::PackedScene::2478559553035008294::1737226597::0::1::::<><>::res://Scripts/CameraScript.cs
-GodotTryinsmthn.tscn::PackedScene::2849313196763200652::1737233917::0::1::::<><>::uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>uid://dtxror4plrnag::::res://Instance Scenes/TestCube.tscn<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://c3vym50vcokec::::res://Instance Scenes/dummy.tscn<>uid://ct6hmu1m4gdrr::::res://Unique Scenes/UiNumber.tscn
-lvl1.tscn::PackedScene::406839052474789523::1737234068::0::1::::<><>::res://Scripts/GameHandlerlv0.cs<>uid://cjc51nisra5cr::::res://Assets/levels/lvl1_dungeon_texture.png<>res://Instance Scenes/wall.tscn<>res://Instance Scenes/wall_corner.tscn<>res://Instance Scenes/pillar.tscn<>res://Instance Scenes/pillar_decorated.tscn<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>res://Instance Scenes/EnemyRanged.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>uid://buxe2swq1v28x::::res://Instance Scenes/no_go_zone.tscn<>uid://db8gmjmwe5ygi::::res://Unique Scenes/no_go_wall.tscn
-lvl2.tscn::PackedScene::-1::1737226597::0::1::::<><>::
-lvl_0.tscn::PackedScene::4459728149126905885::1737233918::0::1::::<><>::uid://dlx58m21dkfk2::::res://Assets/levels/lvl0.glb<>res://Scripts/GameHandlerlv0.cs<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>res://Instance Scenes/EnemyRanged.tscn<>uid://cjc51nisra5cr::::res://Assets/levels/lvl1_dungeon_texture.png
-Mainmenu.tscn::PackedScene::5242244346219252107::1737233917::0::1::::<><>::res://menu stuff/Bold-Colorful-Modern-Elegant-YouTube-Intro-Video-_1_.ogv<>res://Scripts/Mainmenu.cs
-player.tscn::PackedScene::6209450061745544640::1737233918::0::1::::<><>::res://Scripts/PlayerScript.cs<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn<>uid://ct6hmu1m4gdrr::::res://Unique Scenes/UiNumber.tscn
-no_go_wall.tscn::PackedScene::7297961584338701732::1737233246::0::1::::<><>::
+GodotTryinsmthn.tscn::PackedScene::2849313196763200652::1737238631::0::1::::<><>::uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>uid://dtxror4plrnag::::res://Instance Scenes/TestCube.tscn<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://c3vym50vcokec::::res://Instance Scenes/dummy.tscn<>uid://ct6hmu1m4gdrr::::res://Unique Scenes/UiNumber.tscn
+lvl1.tscn::PackedScene::406839052474789523::1737238631::0::1::::<><>::res://Scripts/GameHandlerlv0.cs<>uid://cjc51nisra5cr::::res://Assets/levels/lvl1_dungeon_texture.png<>res://Instance Scenes/wall.tscn<>res://Instance Scenes/wall_corner.tscn<>res://Instance Scenes/pillar.tscn<>res://Instance Scenes/pillar_decorated.tscn<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>res://Instance Scenes/EnemyRanged.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>uid://buxe2swq1v28x::::res://Instance Scenes/no_go_zone.tscn<>uid://db8gmjmwe5ygi::::res://Instance Scenes/no_go_wall.tscn
+lvl_0.tscn::PackedScene::4459728149126905885::1737238631::0::1::::<><>::uid://dlx58m21dkfk2::::res://Assets/levels/lvl0.glb<>res://Scripts/GameHandlerlv0.cs<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>res://Instance Scenes/EnemyRanged.tscn<>uid://cjc51nisra5cr::::res://Assets/levels/lvl1_dungeon_texture.png<>uid://db8gmjmwe5ygi::::res://Instance Scenes/no_go_wall.tscn
+lvl_2.tscn::PackedScene::642935229538049168::1737238631::0::1::::<><>::res://Scripts/GameHandlerlv0.cs<>uid://brc2mutrdcrul::::res://Assets/levels/lvl2_dungeon_texture.png<>res://Instance Scenes/wall.tscn<>res://Instance Scenes/wall_corner.tscn<>uid://db8gmjmwe5ygi::::res://Instance Scenes/no_go_wall.tscn<>uid://cta4q0yu4iwap::::res://Instance Scenes/BarrelsReal.tscn<>uid://cu7beyy7srngn::::res://Instance Scenes/table_1.tscn<>uid://inwdfwntbuwm::::res://Instance Scenes/table2.tscn<>uid://b66u8dxojywcf::::res://Instance Scenes/Enemy.tscn<>res://Instance Scenes/EnemyRanged.tscn<>uid://cup50aaop1qpc::::res://Unique Scenes/player.tscn<>uid://bbkvrp4dyvmi5::::res://Unique Scenes/FollowCam.tscn<>uid://buxe2swq1v28x::::res://Instance Scenes/no_go_zone.tscn
+Mainmenu.tscn::PackedScene::5242244346219252107::1737238631::0::1::::<><>::res://menu stuff/Bold-Colorful-Modern-Elegant-YouTube-Intro-Video-_1_.ogv<>res://Scripts/Mainmenu.cs
+player.tscn::PackedScene::6209450061745544640::1737238631::0::1::::<><>::res://Scripts/PlayerScript.cs<>uid://c0dqmtkmnerjr::::res://Instance Scenes/attack_hitbox.tscn<>uid://dvcjhe4agwqod::::res://Instance Scenes/healthbar.tscn<>uid://12f1ty21gw23::::res://Instance Scenes/attack_hitbox_2.tscn<>uid://ct6hmu1m4gdrr::::res://Unique Scenes/UiNumber.tscn
 UiNumber.tscn::PackedScene::6170872646577030879::1735063246::0::1::::<><>::res://Scripts/UiNumberScript.cs

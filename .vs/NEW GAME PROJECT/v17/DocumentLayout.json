@@ -7,12 +7,28 @@
       "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\navscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\piete\\source\\repos\\GodotInformatica\\Unique Scenes\\Mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Unique Scenes\\Mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\messenger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\messenger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\gamehandlerlv0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\gamehandlerlv0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|solutionrelative:scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D42C5FBA-3B9B-4D15-9E11-98528A01119B}|New Game Project.csproj|c:\\users\\piete\\source\\repos\\godotinformatica\\scripts\\camerascript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,32 +70,85 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Mainmenu.cs",
+              "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\Mainmenu.cs",
+              "RelativeDocumentMoniker": "Scripts\\Mainmenu.cs",
+              "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\Mainmenu.cs",
+              "RelativeToolTip": "Scripts\\Mainmenu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T20:04:05.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Messenger.cs",
+              "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\Messenger.cs",
+              "RelativeDocumentMoniker": "Scripts\\Messenger.cs",
+              "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\Messenger.cs",
+              "RelativeToolTip": "Scripts\\Messenger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T19:56:30.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameHandlerlv0.cs",
+              "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\GameHandlerlv0.cs",
+              "RelativeDocumentMoniker": "Scripts\\GameHandlerlv0.cs",
+              "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\GameHandlerlv0.cs",
+              "RelativeToolTip": "Scripts\\GameHandlerlv0.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T19:53:42.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Mainmenu.cs",
+              "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Unique Scenes\\Mainmenu.cs",
+              "RelativeDocumentMoniker": "Unique Scenes\\Mainmenu.cs",
+              "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Unique Scenes\\Mainmenu.cs",
+              "RelativeToolTip": "Unique Scenes\\Mainmenu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T19:53:09.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "NavScript.cs",
               "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\NavScript.cs",
               "RelativeDocumentMoniker": "Scripts\\NavScript.cs",
               "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\NavScript.cs",
               "RelativeToolTip": "Scripts\\NavScript.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAgwFIAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T16:37:58.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PlayerScript.cs",
               "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\PlayerScript.cs",
               "RelativeDocumentMoniker": "Scripts\\PlayerScript.cs",
               "ToolTip": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\PlayerScript.cs",
               "RelativeToolTip": "Scripts\\PlayerScript.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAQwD0AAAAhAAAA",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAcwFcAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T16:25:28.137Z"
+              "WhenOpened": "2024-12-22T16:25:28.137Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Healthbar.cs",
               "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\Healthbar.cs",
               "RelativeDocumentMoniker": "Scripts\\Healthbar.cs",
@@ -87,11 +156,12 @@
               "RelativeToolTip": "Scripts\\Healthbar.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T11:36:19.07Z"
+              "WhenOpened": "2024-12-22T11:36:19.07Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "CameraScript.cs",
               "DocumentMoniker": "C:\\Users\\piete\\source\\repos\\GodotInformatica\\Scripts\\CameraScript.cs",
               "RelativeDocumentMoniker": "Scripts\\CameraScript.cs",
@@ -99,7 +169,12 @@
               "RelativeToolTip": "Scripts\\CameraScript.cs",
               "ViewState": "AQIAACIAAAAAAAAAAAAUwDUAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T11:31:26.513Z"
+              "WhenOpened": "2024-12-22T11:31:26.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
