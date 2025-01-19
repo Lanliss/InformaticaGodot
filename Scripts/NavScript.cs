@@ -81,6 +81,7 @@ public partial class NavScript : CharacterBody3D
             CollisionLayer = 0;
             attackHitbox.GetChild<CollisionShape3D>(0).Disabled = true;
             attackHitbox.Visible = false;
+            visualEnemy.GetNode<AnimationPlayer>("AnimationPlayer").CurrentAnimation = null;
             //play death anim
         } 
         else if (!dead && !playerFound)
@@ -128,7 +129,7 @@ public partial class NavScript : CharacterBody3D
 
     public override void _PhysicsProcess(double delta)
     {
-        if (dead) { if (MovementTarget != deathPos || GlobalPosition != deathPos) { MovementTarget = deathPos; GlobalPosition = deathPos; } return; /*Jezus arc?*/} //sets position to be dead so that it doesn't move // returns if dead cuz we don't need to update anymore
+        if (dead) { if (MovementTarget != deathPos || GlobalPosition != deathPos) { MovementTarget = deathPos; GlobalPosition = deathPos; } if (visualEnemy.Scale == Vector3.Zero) { return; } /*Jezus arc?*/} //sets position to be dead so that it doesn't move // returns if dead cuz we don't need to update anymore
 
         if (playerFound)
         {
@@ -172,12 +173,14 @@ public partial class NavScript : CharacterBody3D
 
                 if (attackBuildUpTimer > 0f) //if in build up fase
                 {
-                    if (attackBuildUpTimer == attackBuildUpTime) { visualEnemy.GetNode<AnimationPlayer>("AnimationPlayer").Play("attack startup"); }
+                    string buildUpAnimName;
+                    if (!isRanged){buildUpAnimName = "attack startup";} else { buildUpAnimName = "Botto walk2"; }
+                    if (attackBuildUpTimer == attackBuildUpTime) { visualEnemy.GetNode<AnimationPlayer>("AnimationPlayer").Play(buildUpAnimName); }
                     if (attackBuildUpTimer - (float)delta > 0f) { attackBuildUpTimer -= (float)delta; } 
                     else 
-                    { 
-                        attackBuildUpTimer = 0f; 
-                        visualEnemy.GetNode<AnimationPlayer>("AnimationPlayer").Play("Attack hitbox");
+                    {
+                        if (!isRanged) {visualEnemy.GetNode<AnimationPlayer>("AnimationPlayer").Play("Attack hitbox");}
+                            attackBuildUpTimer = 0f; 
                         attackHitbox.Visible = true;
                         attackHitbox.GetChild<CollisionShape3D>(0).Disabled = false;
                     }
@@ -198,7 +201,7 @@ public partial class NavScript : CharacterBody3D
                         attackHitbox.GetChild<CollisionShape3D>(0).Disabled = true;
                         isAttacking = false;
                         attackHitbox.Visible = false;
-                        visualEnemy.GetNode<AnimationPlayer>("AnimationPlayer").Play("Guantlet_Idle"); //start idle anim again
+                        if(!isRanged) visualEnemy.GetNode<AnimationPlayer>("AnimationPlayer").Play("Guantlet_Idle"); //start idle anim again
                     }
                 }
             }
@@ -210,6 +213,10 @@ public partial class NavScript : CharacterBody3D
             if (attack2Cooldown > 0f)
             {
                 if (attack2Cooldown - (float)delta >= 0f) { attack2Cooldown -= (float)delta; } else { attack2Cooldown = 0f; }
+            }
+            if (dead && visualEnemy.Scale != Vector3.Zero)
+            {
+                if (visualEnemy.Scale - new Vector3((float)delta, (float)delta, (float)delta) >= Vector3.Zero) { visualEnemy.Scale -= new Vector3((float)delta, (float)delta, (float)delta); } else { visualEnemy.Scale = Vector3.Zero; }
             }
 
 

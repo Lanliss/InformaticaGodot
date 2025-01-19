@@ -1,7 +1,7 @@
-[gd_scene load_steps=30 format=4 uid="uid://broog141cslat"]
+[gd_scene load_steps=30 format=4 uid="uid://cpy1cbvxydfx0"]
 
 [ext_resource type="PackedScene" uid="uid://c3flouu4e8nuc" path="res://Assets/Enemy/gauntlet enemy.glb" id="1_lh5tf"]
-[ext_resource type="Texture2D" uid="uid://m20upnw1wlc2" path="res://Assets/Enemy/gauntlet enemy_dungeon_texture.png" id="2_q7gnq"]
+[ext_resource type="Texture2D" uid="uid://b7mormbkc5uhw" path="res://Assets/Enemy/gauntlet enemy_dungeon_texture.png" id="2_q7gnq"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d5xj2"]
 resource_name = "Material.002"

@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvt77ocyywmv4"]
+
+[ext_resource type="PackedScene" uid="uid://c1skx61mom3jy" path="res://Assets/Enemy/uhhh botto attack this time.glb" id="1_321a6"]
+
+[node name="uhhh botto attack this time" instance=ExtResource("1_321a6")]
+
+[node name="Empty_005" parent="." index="2"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, 0, 0, 0)
+
+[node name="Skeleton3D" parent="Empty_005/Armature" index="0"]
+bones/0/rotation = Quaternion(0.819397, 0.176778, -0.339406, 0.42678)
+bones/2/rotation = Quaternion(0.878586, -0.368224, 0.121224, -0.278932)
+bones/4/rotation = Quaternion(0.816199, 0.172794, 0.347026, -0.428409)
+bones/7/rotation = Quaternion(3.56417e-07, 0.382683, -2.98084e-07, 0.92388)
+bones/8/rotation = Quaternion(-5.7955e-07, -2.98023e-08, 2.92823e-07, 1)
+bones/9/rotation = Quaternion(1.59558e-07, -5.97869e-15, -1.44793e-07, 1)
+bones/10/rotation = Quaternion(9.25265e-09, -7.47082e-16, 5.88221e-09, 1)
+bones/11/rotation = Quaternion(-1.40473e-07, 1.73236e-14, -1.45133e-07, 1)
+bones/12/rotation = Quaternion(1.47507e-07, 3.02564e-15, 1.41134e-07, 1)
+bones/13/rotation = Quaternion(-1.62249e-09, -4.75823e-16, -1.02296e-08, 1)
+bones/14/rotation = Quaternion(-1.89068e-08, -1.55587e-15, 7.92888e-09, 1)
+bones/15/rotation = Quaternion(0.879569, -0.365776, -0.11302, 0.282478)
+
+[node name="Cube_004" parent="Empty_005/Armature/Skeleton3D" index="0"]
+transform = Transform3D(-0.707106, -8.9407e-08, -0.707107, 2.21503e-07, 1, -2.08616e-07, 0.707107, -4.76837e-07, -0.707106, 1.49012e-07, 3.57628e-07, 2.38419e-07)
+
+[node name="Cube_002" parent="Empty_005/Armature/Skeleton3D" index="1"]
+transform = Transform3D(0.707106, 7.59959e-07, 0.707107, -3.8743e-07, 1, -5.66244e-07, -0.707107, 1.49012e-07, 0.707106, -7.45058e-07, -5.96046e-07, -8.04663e-07)
+
+[node name="Cube_005" parent="Empty_005/Armature/Skeleton3D" index="2"]
+transform = Transform3D(0.707107, -1.49012e-07, -0.707107, 1.53668e-07, 1, 0, 0.707107, -8.9407e-08, 0.707107, 2.38419e-07, -4.17233e-07, 5.96046e-08)
+
+[node name="Cube_003" parent="Empty_005/Armature/Skeleton3D" index="3"]
+transform = Transform3D(-0.707127, -2.85506e-05, 0.707086, -2.01762e-05, 0.999999, 2.00719e-05, -0.707086, -8.9407e-08, -0.707127, 1.96099e-05, 9.23872e-06, -8.40425e-06)
+
+[node name="AnimationPlayer" parent="." index="5"]
+playback_default_blend_time = 0.1

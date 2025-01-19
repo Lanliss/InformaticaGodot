@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cu7beyy7srngn" path="res://Instance Scenes/table_1.tscn" id="6_repy1"]
 [ext_resource type="PackedScene" uid="uid://inwdfwntbuwm" path="res://Instance Scenes/table2.tscn" id="7_mdmcf"]
 [ext_resource type="PackedScene" uid="uid://b66u8dxojywcf" path="res://Instance Scenes/Enemy.tscn" id="8_fu56n"]
-[ext_resource type="PackedScene" path="res://Instance Scenes/EnemyRanged.tscn" id="9_wdpy8"]
+[ext_resource type="PackedScene" uid="uid://jlnabhq8dyxq" path="res://Instance Scenes/EnemyRanged.tscn" id="9_wdpy8"]
 [ext_resource type="PackedScene" uid="uid://cup50aaop1qpc" path="res://Unique Scenes/player.tscn" id="10_rti7w"]
 [ext_resource type="PackedScene" uid="uid://bbkvrp4dyvmi5" path="res://Unique Scenes/FollowCam.tscn" id="11_wrafw"]
 [ext_resource type="PackedScene" uid="uid://buxe2swq1v28x" path="res://Instance Scenes/no_go_zone.tscn" id="12_kvx2f"]
@@ -613,13 +613,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1, -16)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, 4)
 
 [node name="Enemy7" parent="." instance=ExtResource("9_wdpy8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 8)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1, 8)
 
 [node name="Enemy8" parent="." instance=ExtResource("9_wdpy8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -28)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, -28)
 
 [node name="Enemy9" parent="." instance=ExtResource("9_wdpy8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, -5)
 
 [node name="Player" parent="." instance=ExtResource("10_rti7w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1.5, -8)

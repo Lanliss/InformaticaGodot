@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://cup50aaop1qpc"]
+[gd_scene load_steps=12 format=3 uid="uid://cup50aaop1qpc"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerScript.cs" id="1_jukd8"]
 [ext_resource type="PackedScene" uid="uid://c0dqmtkmnerjr" path="res://Instance Scenes/attack_hitbox.tscn" id="2_8afs3"]
 [ext_resource type="PackedScene" uid="uid://dvcjhe4agwqod" path="res://Instance Scenes/healthbar.tscn" id="2_w7ge8"]
 [ext_resource type="PackedScene" uid="uid://12f1ty21gw23" path="res://Instance Scenes/attack_hitbox_2.tscn" id="3_idman"]
 [ext_resource type="PackedScene" uid="uid://ct6hmu1m4gdrr" path="res://Unique Scenes/UiNumber.tscn" id="5_cfqu6"]
+[ext_resource type="PackedScene" uid="uid://c4tyfh7w3f6lt" path="res://Unique Scenes/VisualPlayerAnimated.tscn" id="6_irndl"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vt3mt"]
 
@@ -16,13 +17,14 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rncd1"]
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("_lookObject", "attackHitbox", "attackHitbox2")]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("_lookObject", "visualPlayer", "attackHitbox", "attackHitbox2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 collision_layer = 2
 collision_mask = 181
 script = ExtResource("1_jukd8")
 _lookObject = NodePath("TempDirectionIndicator")
 deathScreenSceneAdress = "res://Unique Scenes/DeathScreen.tscn"
+visualPlayer = NodePath("Lowpoly cowboy")
 projectileSpeed = 100.0
 attackHitbox = NodePath("AttackHitbox")
 attackBuildUpTime1 = 0.0
@@ -39,9 +41,11 @@ parentCollisionArea = NodePath("../Area3D")
 shape = SubResource("CapsuleShape3D_vt3mt")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("CapsuleMesh_gvdxl")
 
 [node name="TempDirectionIndicator" type="RigidBody3D" parent="."]
+visible = false
 gravity_scale = 0.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="TempDirectionIndicator"]
@@ -87,5 +91,8 @@ scale = Vector2(2.5, 2.5)
 size_flags_vertical = 4
 timerID = 3
 metadata/_edit_use_anchors_ = true
+
+[node name="Lowpoly cowboy" parent="." instance=ExtResource("6_irndl")]
+transform = Transform3D(1.25, 0, 0, 0, 1.25, 0, 0, 0, 1.25, 0, -1, 0)
 
 [connection signal="updateHealthToNav" from="Healthbar" to="." method="Die"]

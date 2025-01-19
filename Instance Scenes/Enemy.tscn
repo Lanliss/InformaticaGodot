@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/NavScript.cs" id="1_7g6jv"]
 [ext_resource type="PackedScene" uid="uid://dvcjhe4agwqod" path="res://Instance Scenes/healthbar.tscn" id="1_muime"]
 [ext_resource type="PackedScene" uid="uid://c0dqmtkmnerjr" path="res://Instance Scenes/attack_hitbox.tscn" id="4_jtcc1"]
-[ext_resource type="PackedScene" path="res://Instance Scenes/NewerAnimationEnemy.tscn" id="4_nsidj"]
+[ext_resource type="PackedScene" uid="uid://cpy1cbvxydfx0" path="res://Instance Scenes/NewerAnimationEnemy.tscn" id="4_nsidj"]
 [ext_resource type="PackedScene" uid="uid://12f1ty21gw23" path="res://Instance Scenes/attack_hitbox_2.tscn" id="5_w8yaj"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ouiib"]

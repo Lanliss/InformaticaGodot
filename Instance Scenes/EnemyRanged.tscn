@@ -1,10 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://rxg2u5ln1nwh"]
+[gd_scene load_steps=9 format=3 uid="uid://jlnabhq8dyxq"]
 
 [ext_resource type="Script" path="res://Scripts/NavScript.cs" id="1_olyk7"]
 [ext_resource type="PackedScene" uid="uid://dvcjhe4agwqod" path="res://Instance Scenes/healthbar.tscn" id="2_mf2st"]
 [ext_resource type="PackedScene" uid="uid://c0dqmtkmnerjr" path="res://Instance Scenes/attack_hitbox.tscn" id="3_ata65"]
-[ext_resource type="PackedScene" uid="uid://broog141cslat" path="res://Instance Scenes/NewerAnimationEnemy.tscn" id="4_e8pju"]
 [ext_resource type="PackedScene" uid="uid://12f1ty21gw23" path="res://Instance Scenes/attack_hitbox_2.tscn" id="5_q6pb7"]
+[ext_resource type="PackedScene" uid="uid://dvt77ocyywmv4" path="res://Instance Scenes/visualRangedEnemy.tscn" id="5_thi5v"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ouiib"]
 
@@ -18,7 +18,7 @@ radius = 6.0
 script = ExtResource("1_olyk7")
 _navigationAgent = NodePath("NavigationAgent3D")
 playerDetectionShape3D = NodePath("DetectionArea3D/CollisionShape3D")
-visualEnemy = NodePath("gauntlet enemy")
+visualEnemy = NodePath("uhhh botto attack this time")
 isRanged = true
 attackHitbox1 = NodePath("AttackHitbox")
 attackHitbox2 = NodePath("AttackHitbox2")
@@ -65,11 +65,12 @@ collision_layer = 16
 collision_mask = 2
 metadata/dmg = 10
 
-[node name="gauntlet enemy" parent="." instance=ExtResource("4_e8pju")]
-
 [node name="AttackHitbox2" parent="." instance=ExtResource("5_q6pb7")]
 collision_layer = 16
 collision_mask = 3
+
+[node name="uhhh botto attack this time" parent="." instance=ExtResource("5_thi5v")]
+transform = Transform3D(6.55671e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, 6.55671e-08, 0, -1, 0)
 
 [connection signal="updateHealthToNav" from="Healthbar" to="." method="Die"]
 [connection signal="body_entered" from="DetectionArea3D" to="." method="OnPlayerDetected"]

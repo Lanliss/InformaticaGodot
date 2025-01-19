@@ -12,7 +12,10 @@ public partial class PlayerScript : CharacterBody3D
 	[Export] private float dashCooldownTime = 0.5f;
 	[Export] private string deathScreenSceneAdress;
 
-	[ExportCategory("Attack Settings")]
+	[Export]
+	private Node3D visualPlayer;
+
+    [ExportCategory("Attack Settings")]
     [Export] private float attackRange = 1f;
     [Export] private float projectileSpeed = 10f;
 
@@ -53,7 +56,8 @@ public partial class PlayerScript : CharacterBody3D
 
 	public void OnMousePosition(Vector3 mousePosition) {
 		lookDirection = (mousePosition - GlobalPosition).Normalized();
-	}
+        //visualPlayer.Rotation = new Vector3(0, Mathf.Atan2(lookDirection.X, lookDirection.Z), 0);
+    }
 
 	private void StartAttack(Area3D attackHitboxIn, float attackCooldownIn, float attackDurationIn, float attackBuilUpTimeIn) {
 		currentAttackHitbox = attackHitboxIn;
@@ -64,12 +68,14 @@ public partial class PlayerScript : CharacterBody3D
 
         lastAttacked = 0;
 		isAttacking = true;
-		//currentAttackHitbox.Visible = true;
-		//currentAttackHitbox.GetChild<CollisionShape3D>(0).Disabled = false;
+		
 		currentAttackHitbox.Position = new Vector3(lookDirection.X, currentAttackHitbox.Position.Y, lookDirection.Z).Normalized() * attackRange;
 		projectileVector = currentAttackHitbox.Position;
 		currentAttackHitbox.Rotation = new Vector3(0, Mathf.Atan2(lookDirection.X, lookDirection.Z), 0);
-	}
+
+        visualPlayer.GetNode<AnimationPlayer>("AnimationPlayer").Play("Guy attack 1");
+        visualPlayer.Rotation = new Vector3(0, Mathf.Atan2(lookDirection.X, lookDirection.Z), 0);
+    }
 
     public void Die(int health)
     {
@@ -115,14 +121,19 @@ public partial class PlayerScript : CharacterBody3D
 		{
 			if (direction != Vector3.Zero)
 			{
-				velocity.X = direction.X * speed;
+                if (dashCooldown == 0 && visualPlayer.GetNode<AnimationPlayer>("AnimationPlayer").CurrentAnimation != "guy run") { visualPlayer.GetNode<AnimationPlayer>("AnimationPlayer").Play("guy run"); }
+
+                velocity.X = direction.X * speed;
 				velocity.Z = direction.Z * speed;
 				moveDirection = direction;
 				moveDirection = moveDirection.Rotated(Vector3.Up, 0.25f * MathF.PI);
-				_lookObject.Position = moveDirection;   //direction is already normalised
+				visualPlayer.Rotation = new Vector3(0, Mathf.Atan2(moveDirection.X, moveDirection.Z), 0);
+
+                _lookObject.Position = moveDirection;   //direction is already normalised
 			}
 			else
 			{
+				if (dashCooldown == 0 && visualPlayer.GetNode<AnimationPlayer>("AnimationPlayer").CurrentAnimation != "guy idle") { visualPlayer.GetNode<AnimationPlayer>("AnimationPlayer").Play("guy idle"); }
 				velocity.X = Mathf.MoveToward(Velocity.X, 0, speed);
 				velocity.Z = Mathf.MoveToward(Velocity.Z, 0, speed);
 			}
@@ -132,7 +143,9 @@ public partial class PlayerScript : CharacterBody3D
 			{
 				if (moveDirection != Vector3.Zero)
 				{
-					GlobalPosition += new Vector3(moveDirection.X, 0, moveDirection.Z).Normalized() * dashDistance;
+                    visualPlayer.GetNode<AnimationPlayer>("AnimationPlayer").Play("guy dash");
+
+                    GlobalPosition += new Vector3(moveDirection.X, 0, moveDirection.Z).Normalized() * dashDistance;
 					dashCooldown = dashCooldownTime;
                     _messengerSingleton.EmitSignal(nameof(_messengerSingleton.OnStartCooldown), 3, dashCooldownTime);
                 }
@@ -157,7 +170,8 @@ public partial class PlayerScript : CharacterBody3D
 					currentAttackHitbox.GetChild<CollisionShape3D>(0).Disabled = true;
 					isAttacking = false;
 					currentAttackHitbox.Visible = false;
-				}
+                    visualPlayer.GetNode<AnimationPlayer>("AnimationPlayer").Play("guy idle");
+                }
 				else if (currentAttackHitbox == attackHitbox2)
 				{
 					currentAttackHitbox.Position += projectileVector * (float)delta * projectileSpeed;
