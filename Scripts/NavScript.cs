@@ -131,7 +131,13 @@ public partial class NavScript : CharacterBody3D
     public override void _PhysicsProcess(double delta)
     {
         if (dead) { if (MovementTarget != deathPos || GlobalPosition != deathPos) { MovementTarget = deathPos; GlobalPosition = deathPos; } if (visualEnemy.Scale == Vector3.Zero) { return; } /*Jezus arc?*/} //sets position to be dead so that it doesn't move // returns if dead cuz we don't need to update anymore
-
+        
+        if (dead && visualEnemy.Scale != Vector3.Zero)
+        {
+            if (visualEnemy.Scale - new Vector3((float)delta, (float)delta, (float)delta) >= Vector3.Zero) { visualEnemy.Scale -= new Vector3((float)delta, (float)delta, (float)delta); } else { visualEnemy.Scale = Vector3.Zero; }
+            return;
+        }
+        
         if (playerFound)
         {
             Vector3 distanceVector = playerNode.GlobalPosition - GlobalPosition;
@@ -215,10 +221,7 @@ public partial class NavScript : CharacterBody3D
             {
                 if (attack2Cooldown - (float)delta >= 0f) { attack2Cooldown -= (float)delta; } else { attack2Cooldown = 0f; }
             }
-            if (dead && visualEnemy.Scale != Vector3.Zero)
-            {
-                if (visualEnemy.Scale - new Vector3((float)delta, (float)delta, (float)delta) >= Vector3.Zero) { visualEnemy.Scale -= new Vector3((float)delta, (float)delta, (float)delta); } else { visualEnemy.Scale = Vector3.Zero; }
-            }
+            
 
 
             if (timeSincePathfindingUpdate + (float)delta >= pathfindingUpdateTime)

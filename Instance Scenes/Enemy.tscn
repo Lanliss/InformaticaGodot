@@ -16,6 +16,7 @@ radius = 6.0
 
 [node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("_navigationAgent", "playerDetectionShape3D", "visualEnemy", "attackHitbox1", "attackHitbox2")]
 script = ExtResource("1_7g6jv")
+rotationSpeed = 2.5
 _navigationAgent = NodePath("NavigationAgent3D")
 playerDetectionShape3D = NodePath("DetectionArea3D/CollisionShape3D")
 visualEnemy = NodePath("gauntlet enemy")
@@ -54,9 +55,6 @@ avoidance_enabled = true
 time_horizon_agents = 10.0
 avoidance_layers = 4
 avoidance_mask = 5
-debug_enabled = true
-debug_use_custom = true
-debug_path_custom_color = Color(0.50171, 0.571719, 0.889622, 1)
 
 [node name="AttackHitbox" parent="." instance=ExtResource("4_jtcc1")]
 collision_layer = 16

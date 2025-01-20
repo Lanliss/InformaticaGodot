@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/PlayerScript.cs" id="1_jukd8"]
 [ext_resource type="PackedScene" uid="uid://c0dqmtkmnerjr" path="res://Instance Scenes/attack_hitbox.tscn" id="2_8afs3"]
 [ext_resource type="PackedScene" uid="uid://dvcjhe4agwqod" path="res://Instance Scenes/healthbar.tscn" id="2_w7ge8"]
-[ext_resource type="PackedScene" uid="uid://12f1ty21gw23" path="res://Instance Scenes/attack_hitbox_2.tscn" id="3_idman"]
+[ext_resource type="PackedScene" uid="uid://dikfhfu57acja" path="res://Instance Scenes/attack_hitbox_3.tscn" id="4_7vjob"]
 [ext_resource type="PackedScene" uid="uid://ct6hmu1m4gdrr" path="res://Unique Scenes/UiNumber.tscn" id="5_cfqu6"]
 [ext_resource type="PackedScene" uid="uid://c4tyfh7w3f6lt" path="res://Unique Scenes/VisualPlayerAnimated.tscn" id="6_irndl"]
 
@@ -23,13 +23,13 @@ visualPlayer = NodePath("Area3D2/Lowpoly cowboy")
 projectileSpeed = 100.0
 attackHitbox = NodePath("AttackHitbox")
 attackBuildUpTime1 = 0.0
-attackHitbox2 = NodePath("AttackHitbox2")
+attackHitbox2 = NodePath("AttackHitbox3")
 attackBuildUpTime2 = 0.0
 attackDuration2 = 0.25
-attackCooldown2 = 3.0
+attackCooldown2 = 1.75
 
 [node name="Healthbar" parent="." node_paths=PackedStringArray("parentCollisionArea") instance=ExtResource("2_w7ge8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 parentCollisionArea = NodePath("../Area3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -43,7 +43,7 @@ mesh = SubResource("CapsuleMesh_gvdxl")
 collision_layer = 8
 collision_mask = 4
 
-[node name="AttackHitbox2" parent="." instance=ExtResource("3_idman")]
+[node name="AttackHitbox3" parent="." instance=ExtResource("4_7vjob")]
 collision_layer = 8
 collision_mask = 4
 

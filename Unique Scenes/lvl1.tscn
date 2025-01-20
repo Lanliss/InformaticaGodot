@@ -337,13 +337,14 @@ mesh = SubResource("ArrayMesh_qlb6a")
 skeleton = NodePath("")
 
 [node name="floor_tile_extralarge_grates_001" type="MeshInstance3D" parent="."]
+sorting_offset = -5.0
 mesh = SubResource("ArrayMesh_o4gu4")
 skeleton = NodePath("")
 
 [node name="floor_tile_big_grate_001" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0)
+sorting_offset = -5.0
 mesh = SubResource("ArrayMesh_jq7ub")
-skeleton = NodePath("")
 
 [node name="floor_tile_big_spikes_001" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0)
