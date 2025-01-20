@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://12f1ty21gw23"]
+[gd_scene load_steps=4 format=3 uid="uid://dikfhfu57acja"]
 
-[ext_resource type="Script" path="res://Scripts/AttackHitboxScript.cs" id="1_68fql"]
-[ext_resource type="PackedScene" uid="uid://d4ax3txjwbodc" path="res://Instance Scenes/VisualEnemyAttack.tscn" id="2_6iu0s"]
+[ext_resource type="Script" path="res://Scripts/AttackHitboxScript.cs" id="1_3focy"]
+[ext_resource type="PackedScene" uid="uid://dtr1trqj1lgrd" path="res://Instance Scenes/VisualPlayerAttack.tscn" id="2_m8g0y"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_uaasb"]
 size = Vector3(0.5, 1, 0.5)
@@ -10,14 +10,15 @@ size = Vector3(0.5, 1, 0.5)
 visible = false
 collision_layer = 0
 collision_mask = 0
-script = ExtResource("1_68fql")
+script = ExtResource("1_3focy")
 collisionShape = NodePath("CollisionShape3D")
-metadata/dmg = 15
+metadata/dmg = 25
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_uaasb")
 disabled = true
 
-[node name="assets" parent="." instance=ExtResource("2_6iu0s")]
+[node name="assets" parent="." instance=ExtResource("2_m8g0y")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 
 [connection signal="body_entered" from="." to="." method="KillProjectile"]

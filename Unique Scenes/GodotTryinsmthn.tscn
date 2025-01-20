@@ -65,6 +65,7 @@ current = true
 _player = NodePath("../PlayerBody3D")
 
 [node name="PlayerBody3D" parent="." instance=ExtResource("3_cgqft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.15646, 0)
 
 [node name="Timer2" parent="." instance=ExtResource("6_ibme3")]
 offset_left = 100.0

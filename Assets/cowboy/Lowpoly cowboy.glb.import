@@ -3631,6 +3631,11 @@ _subresources={
 "slice_99/start_frame": 0,
 "slices/amount": 0
 }
+},
+"nodes": {
+"PATH:rig/Skeleton3D": {
+"rest_pose/external_animation_library": null
+}
 }
 }
 gltf/naming_version=1

@@ -94,6 +94,7 @@ public partial class NavScript : CharacterBody3D
 
     public override void _Ready()
     {
+        playerDetectionShape3D.Shape.Set(CylinderShape3D.PropertyName.Radius, 6f);
         _messengerSingleton = GetNode<Messenger>("/root/Messenger"); //get the singleton
 
         _movementTargetPosition = GlobalPosition;

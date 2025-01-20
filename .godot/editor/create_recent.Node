@@ -1,3 +1,4 @@
+Area3D
 NavigationRegion3D
 CollisionShape3D
 StaticBody3D
@@ -8,7 +9,6 @@ Label
 Container
 ColorRect
 MeshInstance3D
-Area3D
 Panel
 Node
 NavigationObstacle3D

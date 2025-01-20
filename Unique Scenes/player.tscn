@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cup50aaop1qpc"]
+[gd_scene load_steps=10 format=3 uid="uid://cup50aaop1qpc"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerScript.cs" id="1_jukd8"]
 [ext_resource type="PackedScene" uid="uid://c0dqmtkmnerjr" path="res://Instance Scenes/attack_hitbox.tscn" id="2_8afs3"]
@@ -11,20 +11,15 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_gvdxl"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_10lv5"]
-
-[sub_resource type="SphereMesh" id="SphereMesh_70pvk"]
-
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rncd1"]
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("_lookObject", "visualPlayer", "attackHitbox", "attackHitbox2")]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("visualPlayer", "attackHitbox", "attackHitbox2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 collision_layer = 2
 collision_mask = 181
 script = ExtResource("1_jukd8")
-_lookObject = NodePath("TempDirectionIndicator")
 deathScreenSceneAdress = "res://Unique Scenes/DeathScreen.tscn"
-visualPlayer = NodePath("Lowpoly cowboy")
+visualPlayer = NodePath("Area3D2/Lowpoly cowboy")
 projectileSpeed = 100.0
 attackHitbox = NodePath("AttackHitbox")
 attackBuildUpTime1 = 0.0
@@ -43,17 +38,6 @@ shape = SubResource("CapsuleShape3D_vt3mt")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 visible = false
 mesh = SubResource("CapsuleMesh_gvdxl")
-
-[node name="TempDirectionIndicator" type="RigidBody3D" parent="."]
-visible = false
-gravity_scale = 0.0
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="TempDirectionIndicator"]
-shape = SubResource("SphereShape3D_10lv5")
-disabled = true
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="TempDirectionIndicator"]
-mesh = SubResource("SphereMesh_70pvk")
 
 [node name="AttackHitbox" parent="." instance=ExtResource("2_8afs3")]
 collision_layer = 8
@@ -92,7 +76,9 @@ size_flags_vertical = 4
 timerID = 3
 metadata/_edit_use_anchors_ = true
 
-[node name="Lowpoly cowboy" parent="." instance=ExtResource("6_irndl")]
+[node name="Area3D2" type="Area3D" parent="."]
+
+[node name="Lowpoly cowboy" parent="Area3D2" instance=ExtResource("6_irndl")]
 transform = Transform3D(1.25, 0, 0, 0, 1.25, 0, 0, 0, 1.25, 0, -1, 0)
 
 [connection signal="updateHealthToNav" from="Healthbar" to="." method="Die"]

@@ -6,7 +6,6 @@ using static Messenger;
 
 public partial class PlayerScript : CharacterBody3D
 {
-	[Export] private RigidBody3D _lookObject;
 	[Export] private float speed = 5f;
 	[Export] private float dashDistance = 2.5f;
 	[Export] private float dashCooldownTime = 0.5f;
@@ -49,6 +48,7 @@ public partial class PlayerScript : CharacterBody3D
 	
 	public override void _Ready()
 	{
+		//visualPlayer.Position = new Vector3(0, -1, 0);
 		attackHitbox.Visible = false;
 		attackHitbox2.Visible = false;
 		_messengerSingleton = GetNode<Messenger>("/root/Messenger"); //get the singleton
@@ -128,8 +128,7 @@ public partial class PlayerScript : CharacterBody3D
 				moveDirection = direction;
 				moveDirection = moveDirection.Rotated(Vector3.Up, 0.25f * MathF.PI);
 				visualPlayer.Rotation = new Vector3(0, Mathf.Atan2(moveDirection.X, moveDirection.Z), 0);
-
-                _lookObject.Position = moveDirection;   //direction is already normalised
+				//direction is already normalised
 			}
 			else
 			{

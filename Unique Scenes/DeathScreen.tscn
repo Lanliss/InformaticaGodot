@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://dqobqminrpck0"]
+[gd_scene load_steps=2 format=3 uid="uid://byc4eb3r5eb15"]
 
 [ext_resource type="Script" path="res://Scripts/DeathScreen.cs" id="1_s8aue"]
 
@@ -10,7 +10,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_s8aue")
-nextLevelSceneAdress = "res://Unique Scenes/lvl_0.tscn"
+nextLevelSceneAdress = "res://Unique Scenes/Mainmenu.tscn"
 
 [node name="blackBackground" type="ColorRect" parent="."]
 layout_mode = 2

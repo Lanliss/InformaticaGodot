@@ -19,3 +19,7 @@ res://Unique Scenes/player.tscn
 res://Unique Scenes/lvl_2.tscn
 res://Unique Scenes/VisualPlayerAnimated.tscn
 res://Instance Scenes/NewerAnimationEnemy.tscn
+res://Unique Scenes/DeathScreen.tscn
+res://Instance Scenes/attack_hitbox.tscn
+res://Instance Scenes/attack_hitbox_2.tscn
+res://Instance Scenes/attack_hitbox_3.tscn
